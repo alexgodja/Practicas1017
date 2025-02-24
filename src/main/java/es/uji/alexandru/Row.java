@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Row {
     private List<Double> data;
-        public Row(List<Double> data){
-            this.data=new ArrayList<>(data);
+        public Row(String linea,String separador){
+            this.data=linea.split(separador);
         }
 
     public List<Double> getData(){
