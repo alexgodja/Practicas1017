@@ -11,6 +11,10 @@ public class Row {
             this.data=linea.split(separador);
         }
 
+    public Row() {
+
+    }
+
     public List<Double> getData(){
         return new ArrayList<>(data);
     }
