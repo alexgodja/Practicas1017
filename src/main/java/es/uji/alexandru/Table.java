@@ -11,6 +11,7 @@ public class Table extends Row{
         super();
         this.headers=new ArrayList<>(headers);
         this.rows=new ArrayList<>();
+
     }
     public Row getRowAt(int index) throws ArrayIndexOutOfBoundsException{
         if (index>=0 && index<rows.size()){
