@@ -26,5 +26,6 @@ public class Table extends Row{
                 columnas.add(row.getData());
             }
         }
+        return columnas;
     }
 }
