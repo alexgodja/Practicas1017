@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="iris">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" afterDir="false" />
+    </list>
+    <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +38,16 @@
     &quot;accountId&quot;: &quot;5d90fec5-269e-45cd-8013-38c8e819b043&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="14" changelist="c4929f5e-6c8f-4530-a3fc-c81943946158" />
+        <range start1="23" end1="24" start2="24" end2="24" changelist="e9b19955-5fb2-42bc-a435-035f497f6237" />
+        <range start1="25" end1="25" start2="25" end2="26" changelist="e9b19955-5fb2-42bc-a435-035f497f6237" />
+        <range start1="26" end1="28" start2="27" end2="29" changelist="e9b19955-5fb2-42bc-a435-035f497f6237" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -43,16 +57,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/resources&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/al435145/Descargas/cwm-plugin-231.9392.1.14.zip",
+    "onboarding.tips.debug.path": "/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -107,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740477610317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="iris">
+      <option name="closed" value="true" />
+      <created>1740477742100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740477742100</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -21,11 +21,11 @@ public class Table extends Row{
     }
     public List<Double> getColumnAt(int index){
         List<Double> columnas=new ArrayList<>();
-        List<Double> rowData=new ArrayList<>();
         for (Row row: rows){
+            List<Double> rowData=new ArrayList<>();
             rowData.add(row.getData());
-            if (rowData.size()%index==0){
-                columnas.add(row.getData());
+            if (index>=0 && index < rowData.size()){
+                columnas.add(row.getData(index));
             }
         }
         return columnas;
