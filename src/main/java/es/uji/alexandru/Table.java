@@ -9,7 +9,6 @@ public class Table extends Row{
 
     public Table(List<String> headers){
         super();
-
         this.headers=new ArrayList<>(headers);
         this.rows=new ArrayList<>();
     }
@@ -18,7 +17,7 @@ public class Table extends Row{
             return rows.get(index);
         }
         else
-            throw ArrayIndexOutOfBoundsException;
+            throw new ArrayIndexOutOfBoundsException();
     }
     public List<Double> getColumnAt(int index){
         List<Double> columnas=new ArrayList<>();
