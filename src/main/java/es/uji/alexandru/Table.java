@@ -19,8 +19,12 @@ public class Table extends Row{
     }
     public List<Double> getColumnAt(int index){
         List<Double> columnas=new ArrayList<>();
+        List<Double> rowData=new ArrayList<>()
         for (Row row: rows){
-
+            rowData.add(row.getData());
+            if (rowData.size()%index==0){
+                columnas.add(row.getData());
+            }
         }
     }
 }
