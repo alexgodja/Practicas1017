@@ -15,6 +15,9 @@ public class CSV {
 
         String ruta = getClass().getClassLoader().getResource(archivo).toURI().getPath();
         BufferedReader reader = new BufferedReader(new FileReader(archivo));
+        try {
+
+        }
     }
     public TableWithLabels readTableWithLabels(String ruta) throws IOException {
         

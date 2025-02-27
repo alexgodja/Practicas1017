@@ -15,6 +15,8 @@ public class Table {
 
     // Devuelve una fila de la tabla
     public Row getRowAt(int numFila) {
+        if (numFila < 0 || numFila >= rows.size())
+            throw new IndexOutOfBoundsException();
         return rows.get(numFila);
     }
 
@@ -23,6 +25,9 @@ public class Table {
         List<Double> columna = new ArrayList<>();
         for(Row fila : rows){
             List<Double> filaValores = fila.getData();
+            if(numColumna < 0 || numColumna >= filaValores.size()){
+                throw new IndexOutOfBoundsException();
+            }
             columna.add(filaValores.get(numColumna));
         }
         return columna;
