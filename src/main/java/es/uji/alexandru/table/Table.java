@@ -13,6 +13,7 @@ public class Table {
         this.rows = new ArrayList<>(rows);
     }
 
+
     // Devuelve una fila de la tabla
     public Row getRowAt(int numFila) {
         if (numFila < 0 || numFila >= rows.size())

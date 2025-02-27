@@ -43,7 +43,7 @@ public class CSV {
     }
     public TableWithLabels readTableWithLabels(String ruta) throws IOException {
         List<String> headers = new ArrayList<>();
-        List<Row> rows = new ArrayList<>();
+        List<RowWithLabel> rows = new ArrayList<>();
         Map<String,Integer> labelsToIndex = new HashMap<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(ruta))){
@@ -69,7 +69,7 @@ public class CSV {
 
                 rows.add(new RowWithLabel(valoresDouble,etiqueta));
             }
-            return new TableWithLabels(headers, rows,labelsToIndex);
+            return new TableWithLabels(headers, rows);
         }
     }
 }

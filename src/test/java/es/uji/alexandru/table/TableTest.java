@@ -38,7 +38,7 @@ class TableTest {
         // TODO: Descomenta/comenta la opcion que uses/no uses.
 
         //---(2) Inyeccion por constructor---
-        //table = new Table(headers, rows);
+        table = new Table(headers, rows);
         //-----------------------------------
     }
 

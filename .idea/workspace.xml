@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="CSV readTable">
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="CSV readTableWithLabels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +51,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CSVTest.executor": "Run",
     "JUnit.TableTest.executor": "Run",
+    "JUnit.TableWithLabelsTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -70,7 +74,22 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CSVTest">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
@@ -86,8 +105,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TableWithLabelsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableWithLabelsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.TableWithLabelsTest" />
         <item itemvalue="JUnit.TableTest" />
       </list>
     </recent_temporary>
@@ -173,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740696574304</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CSV readTableWithLabels">
+      <option name="closed" value="true" />
+      <created>1740698112430</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740698112430</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +235,8 @@
     <MESSAGE value="dos ficheros" />
     <MESSAGE value="iris" />
     <MESSAGE value="CSV readTable" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSV readTable" />
+    <MESSAGE value="CSV readTableWithLabels" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSV readTableWithLabels" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

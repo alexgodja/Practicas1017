@@ -40,7 +40,7 @@ class TableWithLabelsTest {
 
 
         //---(2) Inyeccion por constructor---
-        //tableWithLabels = new TableWithLabels(headers, rows);
+        tableWithLabels = new TableWithLabels(headers, rows);
         //-----------------------------------
     }
 
