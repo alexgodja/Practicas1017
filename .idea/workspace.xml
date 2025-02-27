@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="row">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" afterDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="clases y tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Row.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/TableWithLabels.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740646426004</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="clases y tests">
+      <option name="closed" value="true" />
+      <created>1740651504153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740651504153</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clases y tests">
+      <option name="closed" value="true" />
+      <created>1740651600752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740651600752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +191,8 @@
     <MESSAGE value="dos ficheros" />
     <MESSAGE value="iris" />
     <MESSAGE value="row" />
-    <option name="LAST_COMMIT_MESSAGE" value="row" />
+    <MESSAGE value="clases y tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="clases y tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

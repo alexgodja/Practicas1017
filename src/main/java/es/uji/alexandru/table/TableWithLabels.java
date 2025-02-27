@@ -8,7 +8,11 @@ public class TableWithLabels extends Table {
         super(headers, rows);
     }
 
-    public RowWithLabel getRow(int numColumna){
+    public RowWithLabel getRowAt(int numColumna){
+
+    }
+
+    public Integer getLabelAsInteger(String label){
 
     }
 }
