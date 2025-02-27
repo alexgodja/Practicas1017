@@ -8,6 +8,7 @@ public class RowWithLabel extends Row {
     //Constructor RowWithLabel
     public RowWithLabel(List<Double> data, String label) {
         super(data);
+        this.label = label;
     }
 
     //Devuelve la etiqueta

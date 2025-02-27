@@ -10,8 +10,9 @@ public class TableWithLabels extends Table {
     }
 
     //Devuelve la fila del número que se pasa
-    public RowWithLabel getRowAt(int numFila){
-        return null;
+    @Override
+    public RowWithLabel getRowAt(int numFila) {
+        
     }
 
 

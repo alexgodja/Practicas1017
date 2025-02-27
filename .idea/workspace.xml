@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="clases y tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KNN.java" afterDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="iris">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" afterDir="false" />
     </list>
+    <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +19,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -36,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/alexgodja/Practicas1017.git&quot;,
-    &quot;accountId&quot;: &quot;0835dbd6-f142-4d79-99e8-12615e17e2cf&quot;
+    &quot;accountId&quot;: &quot;5d90fec5-269e-45cd-8013-38c8e819b043&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -50,84 +49,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.CSVTest.executor": "Run",
-    "JUnit.TableTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alexe/Downloads/miles_dollars.csv",
+    "last_opened_file_path": "/home/al435145/Descargas/cwm-plugin-231.9392.1.14.zip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="es.uji.alexandru.csv" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="es.uji.alexandru" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.TableTest">
-    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practicas1017" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practicas1017" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TableTest" />
-        <item itemvalue="JUnit.CSVTest" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,10 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739873723616</updated>
-      <workItem from="1740662129881" duration="1910000" />
-      <workItem from="1740665103859" duration="731000" />
-      <workItem from="1740673946589" duration="1533000" />
-      <workItem from="1740686421146" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -182,83 +118,32 @@
       <option name="project" value="LOCAL" />
       <updated>1740477610317</updated>
     </task>
-    <task id="LOCAL-00006" summary="row">
+    <task id="LOCAL-00006" summary="iris">
       <option name="closed" value="true" />
-      <created>1740646426004</created>
+      <created>1740477742100</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1740646426004</updated>
+      <updated>1740477742100</updated>
     </task>
-    <task id="LOCAL-00007" summary="clases y tests">
+    <task id="LOCAL-00007" summary="iris">
       <option name="closed" value="true" />
-      <created>1740651504153</created>
+      <created>1740479141408</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1740651504153</updated>
+      <updated>1740479141408</updated>
     </task>
-    <task id="LOCAL-00008" summary="clases y tests">
+    <task id="LOCAL-00008" summary="iris">
       <option name="closed" value="true" />
-      <created>1740651600752</created>
+      <created>1740480694894</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1740651600752</updated>
+      <updated>1740480694894</updated>
     </task>
-    <task id="LOCAL-00009" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740653275355</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1740653275355</updated>
-    </task>
-    <task id="LOCAL-00010" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740655201993</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1740655201993</updated>
-    </task>
-    <task id="LOCAL-00011" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740663996066</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1740663996066</updated>
-    </task>
-    <task id="LOCAL-00012" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740665169582</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1740665169582</updated>
-    </task>
-    <task id="LOCAL-00013" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740665598763</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1740665598763</updated>
-    </task>
-    <task id="LOCAL-00014" summary="clases y tests">
-      <option name="closed" value="true" />
-      <created>1740665631398</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1740665631398</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="9" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -274,9 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dos ficheros" />
     <MESSAGE value="iris" />
-    <MESSAGE value="row" />
-    <MESSAGE value="clases y tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="clases y tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="iris" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
