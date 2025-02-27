@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="iris">
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="row">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Row.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/TableWithLabels.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +52,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CSVTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/al435145/IdeaProjects/Practicas1017/src/main/resources",
@@ -62,6 +71,37 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="es.uji.alexandru.csv" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="es.uji.alexandru" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CSVTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740477610317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="row">
+      <option name="closed" value="true" />
+      <created>1740646426004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740646426004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +177,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dos ficheros" />
     <MESSAGE value="iris" />
-    <option name="LAST_COMMIT_MESSAGE" value="iris" />
+    <MESSAGE value="row" />
+    <option name="LAST_COMMIT_MESSAGE" value="row" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
