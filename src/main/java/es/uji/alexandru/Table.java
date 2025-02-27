@@ -3,7 +3,7 @@ package es.uji.alexandru;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Table extends Row{
+public class Table {
     private List<String> headers;
     private List<Row> rows;
 
