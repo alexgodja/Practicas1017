@@ -1,22 +1,22 @@
 package es.uji.alexandru.csv;
-import es.uji.alexandru.table.Table;
-import es.uji.alexandru.table.Row;
-import es.uji.alexandru.table.TableWithLabels;
 
+import es.uji.alexandru.table.Table;
+import es.uji.alexandru.table.TableWithLabels;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.net.URISyntaxException;
 
 public class CSV {
 
-    public Table readTable(String archivo) throws IOException {
+    //Lee la tabla del archivo que se pasa
+    public Table readTable(String archivo) throws IOException, URISyntaxException {
 
+        String ruta = getClass().getClassLoader().getResource(archivo).toURI().getPath();
+        BufferedReader reader = new BufferedReader(new FileReader(archivo));
     }
-    public TableWithLabels readTableWithLabels(String archivo) throws IOException {
+    public TableWithLabels readTableWithLabels(String ruta) throws IOException {
 
     }
 }
