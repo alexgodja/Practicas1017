@@ -14,12 +14,12 @@ public class CSV {
     public Table readTable(String archivo) throws IOException, URISyntaxException {
 
         String ruta = getClass().getClassLoader().getResource(archivo).toURI().getPath();
-        BufferedReader reader = new BufferedReader(new FileReader(archivo));
-        try {
-
+        try (BufferedReader reader = new BufferedReader(new FileReader(ruta))){
+            
         }
+        return null;
     }
     public TableWithLabels readTableWithLabels(String ruta) throws IOException {
-        
+        return null;
     }
 }
