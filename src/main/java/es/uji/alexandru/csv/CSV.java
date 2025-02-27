@@ -17,6 +17,6 @@ public class CSV {
         BufferedReader reader = new BufferedReader(new FileReader(archivo));
     }
     public TableWithLabels readTableWithLabels(String ruta) throws IOException {
-
+        
     }
 }
