@@ -60,7 +60,7 @@ class CSVTest {
     @Test
     @DisplayName("CSV - readTableWithLabels")
 // TODO: En caso de manejar la excepción en CSV, puedes eliminar la declaración "throws" aquí
-    void readTableWithLabels()  throws IOException {
+    void readTableWithLabels() throws IOException, URISyntaxException {
         TableWithLabels table = csv.readTableWithLabels(irisFile);
 
         // assert that the table is not null
