@@ -96,7 +96,6 @@ class TableWithLabelsTest {
         Integer class1 = tableWithLabels.getLabelAsInteger(tableWithLabels.getRowAt(0).getLabel());
         Integer class2 = tableWithLabels.getLabelAsInteger(tableWithLabels.getRowAt(1).getLabel());
         Integer class3 = tableWithLabels.getLabelAsInteger(tableWithLabels.getRowAt(3).getLabel());
-
         assertNotEquals(class1, class2);
         assertEquals(class1, class3);
     }
