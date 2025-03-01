@@ -1,0 +1,62 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e9b19955-5fb2-42bc-a435-035f497f6237\" name=\"Changes\" comment=\"iris\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java\" afterDir=\"false\" />\n    </list>\n    <list id=\"c4929f5e-6c8f-4530-a3fc-c81943946158\" name=\"Changes by al450630\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;alexgodja&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/alexgodja/Practicas1017.git&quot;,\n    &quot;accountId&quot;: &quot;5d90fec5-269e-45cd-8013-38c8e819b043&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2tD5HxNH3WjmrMZHJFVyLZp541M\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/al435145/Descargas/cwm-plugin-231.9392.1.14.zip&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e9b19955-5fb2-42bc-a435-035f497f6237\" name=\"Changes\" comment=\"\" />\n      <created>1739873723616</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1739873723616</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"dos ficheros\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739874451715</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739874451715</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739874690071</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739874690071</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740477024297</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740477024297</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740477223874</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740477223874</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740477610317</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740477610317</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740477742100</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740477742100</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740479141408</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740479141408</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"iris\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740480694894</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740480694894</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"9\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"dos ficheros\" />\n    <MESSAGE value=\"iris\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"iris\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/es/uji/alexandru/Main.java</url>\n          <line>13</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 13855c2cd94e5755abe2cbdef956253d525fefd9)
++++ b/.idea/workspace.xml	(date 1740559362718)
+@@ -4,13 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="iris">
++    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="CSV">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/CSV.java" afterDir="false" />
+-    </list>
+-    <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/Table.java" afterDir="false" />
+     </list>
++    <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="Changes by al450630" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -138,7 +135,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1740480694894</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="CSV">
++      <option name="closed" value="true" />
++      <created>1740481510334</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1740481510334</updated>
++    </task>
++    <task id="LOCAL-00010" summary="Changes by al450630">
++      <option name="closed" value="true" />
++      <created>1740481548696</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1740481548696</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -155,7 +168,9 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="dos ficheros" />
+     <MESSAGE value="iris" />
+-    <option name="LAST_COMMIT_MESSAGE" value="iris" />
++    <MESSAGE value="CSV" />
++    <MESSAGE value="Changes by al450630" />
++    <option name="LAST_COMMIT_MESSAGE" value="Changes by al450630" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
