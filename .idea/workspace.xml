@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Clase CSV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +32,12 @@
     &quot;assignee&quot;: &quot;alexgodja&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/alexgodja/Practicas1017.git",
-    "accountId": "739cb906-e85a-498e-b65c-8ca9eb6aa79b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alexgodja/Practicas1017.git&quot;,
+    &quot;accountId&quot;: &quot;739cb906-e85a-498e-b65c-8ca9eb6aa79b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -48,9 +51,16 @@
   "keyToString": {
     "JUnit.All in Practicas1017.executor": "Run",
     "JUnit.CSVTest.executor": "Run",
+    "JUnit.KNNTest.executor": "Run",
     "JUnit.TableTest.executor": "Run",
+    "JUnit.TableTest.getColumnAt.executor": "Run",
+    "JUnit.TableTest.getHeaders.executor": "Run",
+    "JUnit.TableTest.getRowAt.executor": "Run",
+    "JUnit.TableTest.rowCount.executor": "Run",
     "JUnit.TableWithLabelsTest.executor": "Run",
+    "JUnit.TableWithLabelsTest.getColumnAt.executor": "Run",
     "JUnit.TableWithLabelsTest.getLabelAsInteger.executor": "Run",
+    "JUnit.TableWithLabelsTest.rowCount.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -73,15 +83,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Practicas1017">
-    <configuration name="All in Practicas1017" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practicas1017" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.KNNTest">
     <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
@@ -97,22 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="PATTERN" value="es.uji.alexandru.machinelearning.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableTest" />
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KNNTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableWithLabelsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TableWithLabelsTest.getColumnAt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +124,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
       <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableWithLabelsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="getColumnAt" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,13 +146,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TableWithLabelsTest.rowCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableWithLabelsTest" />
+      <option name="METHOD_NAME" value="rowCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Practicas1017" />
-        <item itemvalue="JUnit.TableWithLabelsTest" />
-        <item itemvalue="JUnit.TableWithLabelsTest.getLabelAsInteger" />
+        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.CSVTest" />
-        <item itemvalue="JUnit.TableTest" />
+        <item itemvalue="JUnit.TableWithLabelsTest.getLabelAsInteger" />
+        <item itemvalue="JUnit.TableWithLabelsTest.getColumnAt" />
+        <item itemvalue="JUnit.TableWithLabelsTest.rowCount" />
       </list>
     </recent_temporary>
   </component>

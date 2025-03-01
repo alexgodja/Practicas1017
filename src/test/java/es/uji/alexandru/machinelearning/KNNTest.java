@@ -2,6 +2,7 @@
 package es.uji.alexandru.machinelearning;
 
 // TODO: Reemplazar por los imports de tu proyecto
+import es.uji.alexandru.machinelearning.KNN;
 import es.uji.alexandru.csv.CSV;
 import es.uji.alexandru.table.TableWithLabels;
 
