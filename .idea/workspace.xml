@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Clase CSV">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Práctica 1 Acabada">
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
@@ -170,7 +169,7 @@
       <workItem from="1740915216772" duration="120000" />
       <workItem from="1740922994561" duration="16000" />
       <workItem from="1740923214372" duration="481000" />
-      <workItem from="1740928774152" duration="147000" />
+      <workItem from="1740928774152" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -284,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740783591903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Práctica 1 Acabada">
+      <option name="closed" value="true" />
+      <created>1740928982281</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740928982281</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +315,7 @@
     <MESSAGE value="CSV readTableWithLabels" />
     <MESSAGE value="Clase TableWithLabels" />
     <MESSAGE value="Clase CSV" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clase CSV" />
+    <MESSAGE value="Práctica 1 Acabada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Práctica 1 Acabada" />
   </component>
 </project>

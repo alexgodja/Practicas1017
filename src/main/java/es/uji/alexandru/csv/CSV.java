@@ -46,6 +46,8 @@ public class CSV {
 
         return new Table (headers, rows);
     }
+
+    //Lee la tabla con etiquetas del archivo que se pasa
     public TableWithLabels readTableWithLabels(String archivo) throws IOException, URISyntaxException {
         List<String> headers = new ArrayList<>();
         List<RowWithLabel> rowsWithLabels = new ArrayList<>();
