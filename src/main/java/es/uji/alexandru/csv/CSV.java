@@ -69,7 +69,7 @@ public class CSV {
             while ((linea = reader.readLine()) != null) {
                 String[] valores = linea.split(",");
                 List<Double> valoresDouble = new ArrayList<>();
-                String etiqueta = valores[valores.length - 1].trim();
+                String etiqueta = valores[valores.length - 1];
 
                 for (int i = 0; i < valores.length - 1; i++) {
                     valoresDouble.add(Double.parseDouble(valores[i]));
