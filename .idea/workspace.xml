@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="clase KMeans y interfaz Algorithm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KMeans.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
@@ -316,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741209095596</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="clase KMeans y interfaz Algorithm">
+      <option name="closed" value="true" />
+      <created>1741211041933</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741211041933</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
