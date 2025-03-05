@@ -1,0 +1,56 @@
+Index: src/main/java/es/uji/alexandru/Row.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package es.uji.alexandru;\r\n\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\n\r\npublic class Row {\r\n    private List<Double> data;\r\n        public Row(List<Double>data){\r\n            this.data = data;\r\n        }\r\n\r\n    public Row() {\r\n\r\n    }\r\n\r\n    public List<Double> getData(){\r\n            return data;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/es/uji/alexandru/Row.java b/src/main/java/es/uji/alexandru/Row.java
+--- a/src/main/java/es/uji/alexandru/Row.java	(revision 13855c2cd94e5755abe2cbdef956253d525fefd9)
++++ b/src/main/java/es/uji/alexandru/Row.java	(date 1740611626109)
+@@ -1,20 +1,16 @@
+ package es.uji.alexandru;
+ 
+ 
+-import java.util.ArrayList;
+ import java.util.List;
+ 
+ 
+ public class Row {
+     private List<Double> data;
+-        public Row(List<Double>data){
++
++    public Row(List<Double>data){
+             this.data = data;
+-        }
++    }
+ 
+-    public Row() {
+-
+-    }
+-
+     public List<Double> getData(){
+             return data;
+     }
+Index: src/main/java/es/uji/alexandru/Table.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package es.uji.alexandru;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Table extends Row{\r\n    private List<String> headers;\r\n    private List<Row> rows;\r\n\r\n    public Table(List<String> headers){\r\n        super();\r\n        this.headers=new ArrayList<>(headers);\r\n        this.rows=new ArrayList<>();\r\n\r\n    }\r\n    public Row getRowAt(int index) throws ArrayIndexOutOfBoundsException{\r\n        if (index>=0 && index<rows.size()){\r\n            return rows.get(index);\r\n        }\r\n        else\r\n            throw new ArrayIndexOutOfBoundsException();\r\n    }\r\n    public List<Double> getColumnAt(int index){\r\n        List<Double> columnas=new ArrayList<>();\r\n        for (Row row: rows){\r\n            List<Double> rowData=new ArrayList<>();\r\n            rowData.add(row.getData());\r\n            if (index>=0 && index < rowData.size()){\r\n                columnas.add(row.getData(index));\r\n            }\r\n        }\r\n        return columnas;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/es/uji/alexandru/Table.java b/src/main/java/es/uji/alexandru/Table.java
+--- a/src/main/java/es/uji/alexandru/Table.java	(revision 13855c2cd94e5755abe2cbdef956253d525fefd9)
++++ b/src/main/java/es/uji/alexandru/Table.java	(date 1740612633771)
+@@ -3,13 +3,13 @@
+ import java.util.ArrayList;
+ import java.util.List;
+ 
+-public class Table extends Row{
++public class Table {
+     private List<String> headers;
+     private List<Row> rows;
+ 
+     public Table(List<String> headers){
+         super();
+-        this.headers=new ArrayList<>(headers);
++        this.headers = headers;
+         this.rows=new ArrayList<>();
+ 
+     }

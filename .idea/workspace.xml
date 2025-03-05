@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Práctica 1 Acabada" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Práctica 1 Acabada">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in Practicas1017">
+  <component name="RunManager" selected="JUnit.All in Practicas1017">
     <configuration name="All in Practicas1017" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <option name="PACKAGE_NAME" value="" />
@@ -138,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.java in Practicas1017" />
         <item itemvalue="JUnit.All in Practicas1017" />
+        <item itemvalue="JUnit.java in Practicas1017" />
         <item itemvalue="JUnit.TableWithLabelsTest" />
         <item itemvalue="JUnit.TableWithLabelsTest.getLabelAsInteger" />
         <item itemvalue="JUnit.CSVTest" />
