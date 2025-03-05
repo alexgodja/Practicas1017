@@ -5,6 +5,11 @@ import java.util.List;
 
 public class KMeans implements Algorithm <Table,Integer,List<Double>> {
 
+    // Constructor. Almacena número de grupos, iteraciones y semilla.
+    public KMeans(int numClusters, int numIterations, long seed) {
+
+    }
+
     @Override
     public void train(Table data) {
 
