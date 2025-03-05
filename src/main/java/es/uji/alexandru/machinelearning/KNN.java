@@ -5,7 +5,7 @@ import es.uji.alexandru.table.TableWithLabels;
 
 import java.util.List;
 
-public class KNN {
+public class KNN implements  Algorithm<TableWithLabels,Integer,List<Double>> {
     private TableWithLabels trainingData;
     public void train(TableWithLabels iris) {
         this.trainingData=iris;
