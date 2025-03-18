@@ -2,9 +2,9 @@
 package es.uji.alexandru.table;
 
 // TODO: Reemplazar por los imports de tu proyecto
-import es.uji.alexandru.table.Row;
-import es.uji.alexandru.table.Table;
+import es.uji.alexandru.data.table.Row;
 
+import es.uji.alexandru.data.table.Table;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -4,20 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="Clase CSV">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_25_17_46_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_3_25_17_46__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_02_2025_23_07_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_02_2025_23_07__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_02_2025_9_48_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_02_2025_9_48__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_2_25_11_28_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_2_25_11_28__Changes_.xml" beforeDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="hola">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/csv/CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/machinelearning/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/recommender/RecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/Row.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/RowWithLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/RowWithLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/table/TableWithLabelsTest.java" afterDir="false" />
     </list>
-    <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,40 +58,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.All in Practicas1017.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CSVTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KNNTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.getColumnAt.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.getHeaders.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.getRowAt.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.rowCount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.getColumnAt.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.getLabelAsInteger.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.rowCount.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/al435145/Descargas/cwm-plugin-231.9392.1.14.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in Practicas1017.executor": "Run",
+    "JUnit.CSVTest.executor": "Run",
+    "JUnit.KNNTest.executor": "Run",
+    "JUnit.TableTest.executor": "Run",
+    "JUnit.TableTest.getColumnAt.executor": "Run",
+    "JUnit.TableTest.getHeaders.executor": "Run",
+    "JUnit.TableTest.getRowAt.executor": "Run",
+    "JUnit.TableTest.rowCount.executor": "Run",
+    "JUnit.TableWithLabelsTest.executor": "Run",
+    "JUnit.TableWithLabelsTest.getColumnAt.executor": "Run",
+    "JUnit.TableWithLabelsTest.getLabelAsInteger.executor": "Run",
+    "JUnit.TableWithLabelsTest.rowCount.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/al435145/IdeaProjects/Practicas1017/src/test/java/es/uji/alexandru/machinelearning",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="es.uji.alexandru" />
+      <recent name="es.uji.alexandru.table" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.KNNTest">
@@ -95,7 +105,7 @@
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
+          <option name="PATTERN" value="es.uji.alexandru.data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,7 +120,7 @@
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.machinelearning.*" />
+          <option name="PATTERN" value="es.uji.alexandru.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,7 +135,7 @@
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="PATTERN" value="es.uji.alexandru.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,7 +151,7 @@
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="PATTERN" value="es.uji.alexandru.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,7 +167,7 @@
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
+          <option name="PATTERN" value="es.uji.alexandru.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,7 +311,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740783591903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="hola">
+      <option name="closed" value="true" />
+      <created>1742292569032</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1742292569032</updated>
+    </task>
+    <task id="LOCAL-00016" summary="hola">
+      <option name="closed" value="true" />
+      <created>1742292669637</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742292669637</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +351,7 @@
     <MESSAGE value="CSV readTableWithLabels" />
     <MESSAGE value="Clase TableWithLabels" />
     <MESSAGE value="Clase CSV" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clase CSV" />
+    <MESSAGE value="hola" />
+    <option name="LAST_COMMIT_MESSAGE" value="hola" />
   </component>
 </project>

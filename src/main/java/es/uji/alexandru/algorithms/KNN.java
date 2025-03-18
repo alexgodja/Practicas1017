@@ -1,11 +1,11 @@
-package es.uji.alexandru.machinelearning;
+package es.uji.alexandru.algorithms;
 
-import es.uji.alexandru.table.RowWithLabel;
-import es.uji.alexandru.table.TableWithLabels;
+import es.uji.alexandru.data.table.RowWithLabel;
+import es.uji.alexandru.data.table.TableWithLabels;
 
 import java.util.List;
 
-public class KNN implements  Algorithm<TableWithLabels,Integer,List<Double>> {
+public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
     private TableWithLabels trainingData;
     public void train(TableWithLabels iris) {
         this.trainingData=iris;

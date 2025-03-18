@@ -1,9 +1,9 @@
-package es.uji.alexandru.csv;
+package es.uji.alexandru.data;
 
-import es.uji.alexandru.table.Row;
-import es.uji.alexandru.table.RowWithLabel;
-import es.uji.alexandru.table.Table;
-import es.uji.alexandru.table.TableWithLabels;
+import es.uji.alexandru.data.table.Row;
+import es.uji.alexandru.data.table.RowWithLabel;
+import es.uji.alexandru.data.table.Table;
+import es.uji.alexandru.data.table.TableWithLabels;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

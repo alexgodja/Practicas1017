@@ -2,9 +2,9 @@
 package es.uji.alexandru.machinelearning;
 
 // TODO: Reemplazar por los imports de tu proyecto
-import es.uji.alexandru.machinelearning.KNN;
-import es.uji.alexandru.csv.CSV;
-import es.uji.alexandru.table.TableWithLabels;
+import es.uji.alexandru.algorithms.KNN;
+import es.uji.alexandru.data.CSV;
+import es.uji.alexandru.data.table.TableWithLabels;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

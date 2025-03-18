@@ -4,9 +4,9 @@ package es.uji.alexandru.machinelearning;
 // TODO: Pon los imports especificos a tu proyecto
 
 
-import es.uji.alexandru.csv.CSV;
-import es.uji.alexandru.machinelearning.KMeans;
-import es.uji.alexandru.table.TableWithLabels;
+import es.uji.alexandru.data.CSV;
+import es.uji.alexandru.algorithms.KMeans;
+import es.uji.alexandru.data.table.TableWithLabels;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

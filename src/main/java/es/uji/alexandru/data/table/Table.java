@@ -1,4 +1,4 @@
-package es.uji.alexandru.table;
+package es.uji.alexandru.data.table;
 
 import java.util.ArrayList;
 import java.util.List;

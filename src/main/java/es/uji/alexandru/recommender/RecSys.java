@@ -1,12 +1,14 @@
-package es.uji.alexandru.machinelearning;
+package es.uji.alexandru.recommender;
 
-import es.uji.alexandru.table.Table;
+import es.uji.alexandru.algorithms.Algorithm;
+import es.uji.alexandru.data.table.Table;
 
 import java.util.List;
 
-public class RecSys {
+public class RecSys implements Algorithm {
+    private Algorithm algorithm;
     public RecSys(Algorithm algorithm){
-
+        this.algorithm=algorithm;
     }
     public void train (Table trainData){
 
