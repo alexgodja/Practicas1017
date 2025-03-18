@@ -1,7 +1,9 @@
 package es.uji.alexandru.machinelearning;
 
+import es.uji.alexandru.table.Row;
 import es.uji.alexandru.table.Table;
-import java.util.List;
+
+import java.util.*;
 
 public class KMeans implements Algorithm <Table,Integer,List<Double>> {
     private final int numClusters;
@@ -17,6 +19,18 @@ public class KMeans implements Algorithm <Table,Integer,List<Double>> {
 
     @Override
     public void train(Table data) {
+        Random random=new Random(long semilla);
+        Map<Integer, Row> centroides=new HashMap();
+        Map<Integer,>
+
+        for (int i=0;i<numClusters;i++){
+            List<double>=data.getRowAt(random.nextInt());
+            centroides.put(i,fila);
+        }
+
+        for (int i=0;i<numIterations;i++){
+            data.getRowAt(i);
+        }
 
     }
 
