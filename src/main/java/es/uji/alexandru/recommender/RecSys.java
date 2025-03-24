@@ -5,7 +5,7 @@ import es.uji.alexandru.data.table.Table;
 
 import java.util.List;
 
-public class RecSys implements Algorithm {
+public class RecSys{
     private Algorithm algorithm;
     public RecSys(Algorithm algorithm){
         this.algorithm=algorithm;
@@ -17,6 +17,6 @@ public class RecSys implements Algorithm {
 
     }
     public List<String> recommend(String nameLikedItem, int numRecommendations){
-
+        return null;
     }
 }

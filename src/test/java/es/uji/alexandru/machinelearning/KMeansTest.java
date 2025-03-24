@@ -7,11 +7,14 @@ package es.uji.alexandru.machinelearning;
 import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.algorithms.KMeans;
 import es.uji.alexandru.data.table.TableWithLabels;
+import es.uji.alexandru.excepciones.InvalidClusterNumberException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,7 +30,7 @@ class KMeansTest {
 
     @BeforeEach
     // TODO: En caso de manejar la excepción IOException en CSV, puedes eliminarla aquí
-    void setUp() throws InvalidClusterNumberException, IOException {
+    void setUp() throws InvalidClusterNumberException, IOException, URISyntaxException {
         iris = new CSV().readTableWithLabels("iris.csv");
         kMeans = new KMeans(irisClusters, numIterations, seed);
         kMeans.train(iris);
@@ -64,6 +67,6 @@ class KMeansTest {
         Exception e = assertThrows(InvalidClusterNumberException.class, () -> kMeans.train(iris));
         // TODO: reemplazar getNumRows() con método equivalente, si hace falta
         System.out.println("Clusters: "+((InvalidClusterNumberException)e).getNumberOfCusters());
-        assertTrue(((InvalidClusterNumberException)e).getNumberOfCusters() > iris.getNumRows());
+        assertTrue(((InvalidClusterNumberException)e).getNumberOfCusters() > iris.getRowCount());
     }
 }

@@ -38,4 +38,5 @@ public class TableWithLabels extends Table {
     public Integer getLabelAsInteger(String label){
         return labelsToIndex.get(label);
     }
+
 }
