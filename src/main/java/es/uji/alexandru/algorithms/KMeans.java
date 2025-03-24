@@ -82,6 +82,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             double distanciaEuclidea = distanciaEuclidea(centroide,punto);
 
             if(distanciaEuclidea<distanciaMinima)
+                distanciaMinima = distanciaEuclidea;
                 numGrupo = i;
         }
 
