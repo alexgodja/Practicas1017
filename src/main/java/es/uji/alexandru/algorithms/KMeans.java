@@ -30,6 +30,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         Random random=new Random(seed);
         List<Row> datosGrupo = new ArrayList();
 
+        //Para cada grupo de flores se escoge un centroide aleatoriamente la primera vez
         for (int i=1;i<=numClusters;i++){
             int randomIndex = random.nextInt(data.getRowCount());
             List<Double> fila = data.getRowAt(randomIndex).getData();
