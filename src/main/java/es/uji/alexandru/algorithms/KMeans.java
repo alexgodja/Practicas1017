@@ -31,14 +31,18 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         List<Row> datosGrupo = new ArrayList();
 
         for (int i=1;i<=numClusters;i++){
-            List<Double> fila = data.getRowAt(random.nextInt()).getData();
-            centroides.put(i,fila);
+            int randomIndex = random.nextInt(data.getRowCount());
+            List<Double> fila = data.getRowAt(randomIndex).getData();
+            centroides.put(i, fila);
         }
 
         //
         for (int i=0; i < numIterations; i++){
             //Almacena los grupos de flores
             Map<Integer,List<Row>> grupos = new HashMap<>();
+            for (int k = 1; k <= numClusters; k++) {
+                grupos.put(k, new ArrayList<>());
+            }
 
             for(int j = 0; j < data.getRowCount(); j++)
             {
@@ -46,25 +50,24 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
                 List<Double> listaDato = fila.getData();
                 int numGrupo = estimate(listaDato);
 
-                if(!grupos.containsKey(numGrupo))
-                    grupos.put(numGrupo,new ArrayList<>());
                 grupos.get(numGrupo).add(fila);
             }
             for(int j = 1; j <= numClusters; j++)
             {
                 List<Row> filasGrupo = grupos.get(j);
-                int numDatos = filasGrupo.get(0).getData().size();
-                List<Double> centroideRecalculado = new ArrayList();
+                if(!filasGrupo.isEmpty()) {
+                    int numDatos = filasGrupo.get(0).getData().size();
+                    List<Double> centroideRecalculado = new ArrayList();
 
-                for(int k = 0; k < numDatos; k++)
-                {
-                    double sumatorioDato = 0;
-                    for(Row fila : filasGrupo)
-                        sumatorioDato += fila.getData().get(k);
-                    centroideRecalculado.add(sumatorioDato/numDatos);
+                    for (int k = 0; k < numDatos; k++) {
+                        double sumatorioDato = 0;
+                        for (Row fila : filasGrupo)
+                            sumatorioDato += fila.getData().get(k);
+                        centroideRecalculado.add(sumatorioDato / filasGrupo.size());
+                    }
+
+                    centroides.put(j, centroideRecalculado);
                 }
-
-                centroides.put(j,centroideRecalculado);
             }
         }
 
@@ -82,8 +85,10 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             double distanciaEuclidea = distanciaEuclidea(centroide,punto);
 
             if(distanciaEuclidea<distanciaMinima)
+            {
                 distanciaMinima = distanciaEuclidea;
                 numGrupo = i;
+            }
         }
 
         return numGrupo;
@@ -93,7 +98,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     public double distanciaEuclidea(List<Double> centroide, List<Double> punto)
     {
         double sum = 0;
-        for(int i = 0; i < punto.size(); i++)
+        for(int i = 0; i < centroide.size(); i++)
         {
             sum+=Math.pow(centroide.get(i) - punto.get(i),2);
         }

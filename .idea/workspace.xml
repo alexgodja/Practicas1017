@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="1.KMeans y 4.Excepciones">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
@@ -52,6 +53,7 @@
     "JUnit.All in Practicas1017.executor": "Run",
     "JUnit.CSVTest.executor": "Run",
     "JUnit.KMeansTest.executor": "Run",
+    "JUnit.KNNTest.executor": "Run",
     "JUnit.TableTest.executor": "Run",
     "JUnit.TableWithLabelsTest.executor": "Run",
     "JUnit.TableWithLabelsTest.getLabelAsInteger.executor": "Run",
@@ -103,6 +105,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.machinelearning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KNNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TableWithLabelsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
@@ -118,22 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableWithLabelsTest.getLabelAsInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practicas1017" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.table.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.table" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.table.TableWithLabelsTest" />
-      <option name="METHOD_NAME" value="getLabelAsInteger" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="java in Practicas1017" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <option name="TEST_OBJECT" value="directory" />
@@ -145,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.KMeansTest" />
+        <item itemvalue="JUnit.KNNTest" />
         <item itemvalue="JUnit.java in Practicas1017" />
         <item itemvalue="JUnit.All in Practicas1017" />
         <item itemvalue="JUnit.TableWithLabelsTest" />
-        <item itemvalue="JUnit.TableWithLabelsTest.getLabelAsInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +175,7 @@
       <workItem from="1740922994561" duration="16000" />
       <workItem from="1740923214372" duration="481000" />
       <workItem from="1740928774152" duration="279000" />
-      <workItem from="1742814781735" duration="9903000" />
+      <workItem from="1742814781735" duration="13831000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -328,7 +329,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742824051410</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.KMeans y 4.Excepciones">
+      <option name="closed" value="true" />
+      <created>1742826190780</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742826190780</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,5 +365,15 @@
     <MESSAGE value="KMeans" />
     <MESSAGE value="1.KMeans y 4.Excepciones" />
     <option name="LAST_COMMIT_MESSAGE" value="1.KMeans y 4.Excepciones" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
