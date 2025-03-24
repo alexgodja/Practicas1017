@@ -9,6 +9,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numClusters;
     private final int numIterations;
     private final long seed;
+    private Map<Integer, Row> centroides=new HashMap();
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
     public KMeans(int numClusters, int numIterations, long seed) {
@@ -17,10 +18,11 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         this.seed = seed;
     }
 
+    //Método train
     @Override
     public void train(Table data) {
-        Random random=new Random(long semilla);
-        Map<Integer, Row> centroides=new HashMap();
+        Random random=new Random(seed);
+        List<Row> datosGrupo = new ArrayList();
         Map<Integer,List<Row>> grupos = new HashMap<>();
 
         for (int i=0;i<numClusters;i++){
@@ -28,20 +30,38 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             centroides.put(i,fila);
         }
 
+        //
         for (int i=0;i<numIterations;i++){
-            data.getRowAt(i);
+            for(int j = 0; j < data.getRowCount(); j++)
+            {
+                Row fila = data.getRowAt(j);
+                List<Double> listaDato = fila.getData();
+                int numGrupo = estimate(listaDato);
+
+                if(!grupos.containsKey(numGrupo))
+                    grupos.put(numGrupo,new ArrayList<>());
+                grupos.get(numGrupo).add(fila);
+            }
+
+
         }
 
     }
 
     @Override
     public Integer estimate(List<Double> punto) {
-        double distanciaCercana = 0;
-        double distanciaEuclidea = 0;
-        Integer numGrupo = null;
-        for(int i = 0; i < 3; i++)
+
+        double distanciaMinima = Double.MAX_VALUE;
+        int numGrupo = 0;
+
+        for(int i =1;i<=numClusters;i++)
         {
-            distanciaEuclidea = distanciaEuclidea();
+            Row centroide = centroides.get(i);
+            List<Double> datosCentroide = centroide.getData();
+            double distanciaEuclidea = distanciaEuclidea(datosCentroide,punto);
+
+            if(distanciaEuclidea<distanciaMinima)
+                numGrupo = i;
         }
 
         return numGrupo;
