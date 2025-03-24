@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="KMeans">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/excepciones/InvalidClusterNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/excepciones/LikedItemNotFoundException.java" afterDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="1.KMeans y 4.Excepciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/recommender/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/recommender/RecSys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +175,7 @@
       <workItem from="1740922994561" duration="16000" />
       <workItem from="1740923214372" duration="481000" />
       <workItem from="1740928774152" duration="279000" />
-      <workItem from="1742814781735" duration="4794000" />
+      <workItem from="1742814781735" duration="8595000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -318,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742779207846</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1.KMeans y 4.Excepciones">
+      <option name="closed" value="true" />
+      <created>1742819651937</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1742819651937</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +347,7 @@
     <MESSAGE value="Clase CSV" />
     <MESSAGE value="Práctica 1 Acabada" />
     <MESSAGE value="KMeans" />
-    <option name="LAST_COMMIT_MESSAGE" value="KMeans" />
+    <MESSAGE value="1.KMeans y 4.Excepciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.KMeans y 4.Excepciones" />
   </component>
 </project>

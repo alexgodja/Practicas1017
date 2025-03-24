@@ -29,7 +29,6 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
 
         Random random=new Random(seed);
         List<Row> datosGrupo = new ArrayList();
-        Map<Integer,List<Row>> grupos = new HashMap<>();
 
         for (int i=1;i<=numClusters;i++){
             List<Double> fila = data.getRowAt(random.nextInt()).getData();
@@ -38,6 +37,9 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
 
         //
         for (int i=0; i < numIterations; i++){
+            //Almacena los grupos de flores
+            Map<Integer,List<Row>> grupos = new HashMap<>();
+
             for(int j = 0; j < data.getRowCount(); j++)
             {
                 Row fila = data.getRowAt(j);
@@ -50,28 +52,17 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             }
             for(int j = 1; j <= numClusters; j++)
             {
+                List<Row> filasGrupo = grupos.get(j);
+                int numDatos = filasGrupo.get(0).getData().size();
                 List<Double> centroideRecalculado = new ArrayList();
-                int numPuntos = grupos.get(j).size();
-                double sumX = 0;
-                double sumY = 0;
-                double sumZ = 0;
-                double sumW = 0;
 
-                for(int k = 0; k < numPuntos; k++)
+                for(int k = 0; k < numDatos; k++)
                 {
-
-                    Row fila = grupos.get(j).get(k);
-                    List<Double> datosFila = fila.getData();
-                    sumX += datosFila.get(0);
-                    sumY += datosFila.get(1);
-                    sumZ += datosFila.get(2);
-                    sumW += datosFila.get(3);
+                    double sumatorioDato = 0;
+                    for(Row fila : filasGrupo)
+                        sumatorioDato += fila.getData().get(k);
+                    centroideRecalculado.add(sumatorioDato/numDatos);
                 }
-
-                centroideRecalculado.add(sumX/numPuntos);
-                centroideRecalculado.add(sumY/numPuntos);
-                centroideRecalculado.add(sumZ/numPuntos);
-                centroideRecalculado.add(sumW/numPuntos);
 
                 centroides.put(j,centroideRecalculado);
             }
