@@ -7,9 +7,9 @@ import es.uji.alexandru.excepciones.InvalidClusterNumberException;
 import java.util.*;
 
 public class KMeans implements Algorithm<Table,Integer,List<Double>> {
-    private final int numClusters;
-    private final int numIterations;
-    private final long seed;
+    private final int numClusters; // número de grupos
+    private final int numIterations; // iteraciones
+    private final long seed; //semilla
     private Map<Integer, List<Double>> centroides=new HashMap();
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
@@ -23,6 +23,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     @Override
     public void train(Table data) {
 
+        //Excepción
         if (numClusters > data.getRowCount()) {
             throw new InvalidClusterNumberException(numClusters, data.getRowCount());
         }
@@ -37,14 +38,15 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             centroides.put(i, fila);
         }
 
-        //
+        //Asigar los datos a un grupo y recalcular los centroides numIteraciones veces
         for (int i=0; i < numIterations; i++){
-            //Almacena los grupos de flores
+            //Mapa que almacena los grupos de flores
             Map<Integer,List<Row>> grupos = new HashMap<>();
             for (int k = 1; k <= numClusters; k++) {
                 grupos.put(k, new ArrayList<>());
             }
 
+            //Añadir cada punto a su grupo correspondiente
             for(int j = 0; j < data.getRowCount(); j++)
             {
                 Row fila = data.getRowAt(j);
@@ -53,27 +55,30 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
 
                 grupos.get(numGrupo).add(fila);
             }
+
+            //Se calcula el centroide de cada grupo
             for(int j = 1; j <= numClusters; j++)
             {
                 List<Row> filasGrupo = grupos.get(j);
-                if(!filasGrupo.isEmpty()) {
-                    int numDatos = filasGrupo.get(0).getData().size();
-                    List<Double> centroideRecalculado = new ArrayList();
 
-                    for (int k = 0; k < numDatos; k++) {
-                        double sumatorioDato = 0;
-                        for (Row fila : filasGrupo)
-                            sumatorioDato += fila.getData().get(k);
-                        centroideRecalculado.add(sumatorioDato / filasGrupo.size());
-                    }
+                int numDatos = filasGrupo.get(0).getData().size();
+                List<Double> centroideRecalculado = new ArrayList();
 
-                    centroides.put(j, centroideRecalculado);
+                //Se obtiene cada coordenada del centroide
+                for (int k = 0; k < numDatos; k++) {
+                    double sumatorioDato = 0;
+                    for (Row fila : filasGrupo)
+                        sumatorioDato += fila.getData().get(k);
+                    centroideRecalculado.add(sumatorioDato / filasGrupo.size());
                 }
+
+                centroides.put(j, centroideRecalculado);
             }
         }
 
     }
 
+    //Determina el grupo al que pertenece un punto
     @Override
     public Integer estimate(List<Double> punto) {
 
@@ -95,7 +100,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         return numGrupo;
     }
 
-
+    //Calcula la distancia euclidea entre un punto y un centroide
     public double distanciaEuclidea(List<Double> centroide, List<Double> punto)
     {
         double sum = 0;
