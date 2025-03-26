@@ -10,7 +10,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numClusters; // número de grupos
     private final int numIterations; // iteraciones
     private final long seed; //semilla
-    private Map<Integer, List<Double>> centroides=new HashMap();
+    private final Map<Integer, List<Double>> centroides=new HashMap<>();
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
     public KMeans(int numClusters, int numIterations, long seed) {
@@ -29,7 +29,6 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         }
 
         Random random=new Random(seed);
-        List<Row> datosGrupo = new ArrayList();
 
         //Para cada grupo de flores se escoge un centroide aleatoriamente la primera vez
         for (int i=1;i<=numClusters;i++){
@@ -61,8 +60,8 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             {
                 List<Row> filasGrupo = grupos.get(j);
 
-                int numDatos = filasGrupo.get(0).getData().size();
-                List<Double> centroideRecalculado = new ArrayList();
+                int numDatos = filasGrupo.getFirst().getData().size();
+                List<Double> centroideRecalculado = new ArrayList<>();
 
                 //Se obtiene cada coordenada del centroide recalculado
                 for (int k = 0; k < numDatos; k++) {
