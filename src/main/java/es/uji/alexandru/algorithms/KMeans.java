@@ -64,7 +64,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
                 int numDatos = filasGrupo.get(0).getData().size();
                 List<Double> centroideRecalculado = new ArrayList();
 
-                //Se obtiene cada coordenada del centroide
+                //Se obtiene cada coordenada del centroide recalculado
                 for (int k = 0; k < numDatos; k++) {
                     double sumatorioDato = 0;
                     for (Row fila : filasGrupo)
