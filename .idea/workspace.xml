@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="18-03">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/Distance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/excepciones/LikedItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/excepciones/LikedItemNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/recommender/RecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/recommender/RecSys.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -146,12 +146,20 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SongRecSys" />
+        <item itemvalue="JUnit.All in Practicas1017" />
         <item itemvalue="JUnit.java in Practicas1017" />
         <item itemvalue="JUnit.KMeansTest" />
         <item itemvalue="JUnit.KNNTest" />
-        <item itemvalue="JUnit.All in Practicas1017" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -170,6 +178,13 @@
       <workItem from="1742814781735" duration="14485000" />
       <workItem from="1742895526615" duration="24000" />
       <workItem from="1742997322514" duration="1878000" />
+      <workItem from="1743401353447" duration="45000" />
+      <workItem from="1743415477121" duration="488000" />
+      <workItem from="1743415986378" duration="166000" />
+      <workItem from="1743416162710" duration="32000" />
+      <workItem from="1743587260977" duration="88000" />
+      <workItem from="1743588624557" duration="8000" />
+      <workItem from="1744058948562" duration="1257000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
