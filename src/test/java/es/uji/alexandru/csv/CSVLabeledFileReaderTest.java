@@ -1,7 +1,5 @@
 package es.uji.alexandru.csv;// TODO: Remplazar <nombre> por el nombre de tu paquete
 
-<nombre>;
-
 // TODO: Pon los imports especificos a tu proyecto
 
 import org.junit.jupiter.api.AfterEach;

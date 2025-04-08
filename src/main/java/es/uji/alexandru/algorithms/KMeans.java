@@ -11,13 +11,14 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numIterations; // iteraciones
     private final long seed; //semilla
     private final Map<Integer, List<Double>> centroides=new HashMap<>();
-    private Distance distance;
+    private final Distance distance;
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
     public KMeans(int numClusters, int numIterations, long seed, Distance distance) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
         this.seed = seed;
+        this.distance = distance;
     }
 
     //Método train
