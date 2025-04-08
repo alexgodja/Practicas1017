@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="18-03">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/EuclideanDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/ManhattanDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVLabeledFileReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVUnlabeledFileReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/EuclideanDistanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/ManhattanDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/ReaderTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/ReaderTemplate.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/alexgodja/Practicas1017.git&quot;,
-    &quot;accountId&quot;: &quot;f1b0b555-e94c-4225-9772-7950f9edf0db&quot;
+    &quot;accountId&quot;: &quot;0835dbd6-f142-4d79-99e8-12615e17e2cf&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -59,44 +50,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SongRecSys.executor": "Run",
-    "JUnit.All in Practicas1017.executor": "Run",
-    "JUnit.CSVTest.executor": "Run",
-    "JUnit.EuclideanDistanceTest.executor": "Run",
-    "JUnit.KMeansTest.executor": "Run",
-    "JUnit.KNNTest.executor": "Run",
-    "JUnit.TableTest.executor": "Run",
-    "JUnit.TableWithLabelsTest.executor": "Run",
-    "JUnit.TableWithLabelsTest.getLabelAsInteger.executor": "Run",
-    "JUnit.java in Practicas1017.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/al450630/IdeaProjects/Practicas1017/src/test/java/es/uji/alexandru/csv",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SongRecSys.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Practicas1017.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CSVTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KMeansTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KNNTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TableTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TableWithLabelsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TableWithLabelsTest.getLabelAsInteger.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in Practicas1017.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/IdeaProjects/Practicas1017&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv" />
-      <recent name="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ManhattanDistanceTest">
+  <component name="RunManager" selected="Application.SongRecSys">
     <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.SongRecSys" />
       <module name="Practicas1017" />
@@ -118,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EuclideanDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KMeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
@@ -127,13 +115,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.EuclideanDistanceTest" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KMeansTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManhattanDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +130,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.ManhattanDistanceTest" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KNNTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,13 +146,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManhattanDistanceTest" />
-        <item itemvalue="JUnit.EuclideanDistanceTest" />
         <item itemvalue="Application.SongRecSys" />
         <item itemvalue="JUnit.All in Practicas1017" />
         <item itemvalue="JUnit.java in Practicas1017" />
+        <item itemvalue="JUnit.KMeansTest" />
+        <item itemvalue="JUnit.KNNTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
