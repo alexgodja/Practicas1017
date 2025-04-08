@@ -1,8 +1,6 @@
 package es.uji.alexandru;
 
-import es.uji.alexandru.algorithms.Algorithm;
-import es.uji.alexandru.algorithms.KMeans;
-import es.uji.alexandru.algorithms.KNN;
+import es.uji.alexandru.algorithms.*;
 import es.uji.alexandru.recommender.RecSys;
 import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.data.CSV;
@@ -14,6 +12,7 @@ import java.util.*;
 
 class SongRecSys {
     private RecSys recsys;
+    private Distance distance = new EuclideanDistance();
 
     SongRecSys(String method) throws Exception {
         String sep = System.getProperty("file.separator");
@@ -28,8 +27,8 @@ class SongRecSys {
 
         // Algorithms
         Map<String, Algorithm> algorithms = new HashMap<>();
-        algorithms.put("knn",new KNN());
-        algorithms.put("kmeans",new KMeans(15, 200, 4321));
+        algorithms.put("knn",new KNN(distance));
+        algorithms.put("kmeans",new KMeans(15, 200, 4321,distance));
 
         // Tables
         Map<String, Table> tables = new HashMap<>();

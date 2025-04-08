@@ -11,9 +11,10 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numIterations; // iteraciones
     private final long seed; //semilla
     private final Map<Integer, List<Double>> centroides=new HashMap<>();
+    private Distance distance;
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
-    public KMeans(int numClusters, int numIterations, long seed) {
+    public KMeans(int numClusters, int numIterations, long seed, Distance distance) {
         this.numClusters = numClusters;
         this.numIterations = numIterations;
         this.seed = seed;
@@ -87,7 +88,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         for(int i =1; i<= numClusters; i++)
         {
             List<Double> centroide = centroides.get(i);
-            double distanciaEuclidea = distanciaEuclidea(centroide,punto);
+            double distanciaEuclidea = distance.calculateDistance(centroide, punto);
 
             if(distanciaEuclidea<distanciaMinima)
             {
@@ -97,16 +98,5 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         }
 
         return numGrupo;
-    }
-
-    //Calcula la distancia euclidea entre un punto y un centroide
-    public double distanciaEuclidea(List<Double> centroide, List<Double> punto)
-    {
-        double sum = 0;
-        for(int i = 0; i < centroide.size(); i++)
-        {
-            sum+=Math.pow(centroide.get(i) - punto.get(i),2);
-        }
-        return Math.sqrt(sum);
     }
 }

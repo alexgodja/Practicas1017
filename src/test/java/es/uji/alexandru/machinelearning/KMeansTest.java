@@ -4,6 +4,8 @@ package es.uji.alexandru.machinelearning;
 // TODO: Pon los imports especificos a tu proyecto
 
 
+import es.uji.alexandru.algorithms.Distance;
+import es.uji.alexandru.algorithms.EuclideanDistance;
 import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.algorithms.KMeans;
 import es.uji.alexandru.data.table.TableWithLabels;
@@ -27,12 +29,13 @@ class KMeansTest {
     private int irisClusters = 3;
     private int numIterations = 10;
     private long seed = 53;
+    private Distance distance = new EuclideanDistance();
 
     @BeforeEach
     // TODO: En caso de manejar la excepción IOException en CSV, puedes eliminarla aquí
     void setUp() throws InvalidClusterNumberException, IOException, URISyntaxException {
         iris = new CSV().readTableWithLabels("iris.csv");
-        kMeans = new KMeans(irisClusters, numIterations, seed);
+        kMeans = new KMeans(irisClusters, numIterations, seed,distance);
         kMeans.train(iris);
     }
 
@@ -63,7 +66,7 @@ class KMeansTest {
     @Test
     @DisplayName("KMeans train - more clusters than samples")
     void train_invalidClusters() {
-        kMeans = new KMeans(200, numIterations, seed);
+        kMeans = new KMeans(200, numIterations, seed,distance);
         Exception e = assertThrows(InvalidClusterNumberException.class, () -> kMeans.train(iris));
         // TODO: reemplazar getNumRows() con método equivalente, si hace falta
         System.out.println("Clusters: "+((InvalidClusterNumberException)e).getNumberOfCusters());
