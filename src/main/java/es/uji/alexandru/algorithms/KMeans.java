@@ -21,7 +21,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
         this.distance = distance;
     }
 
-    //Método train
+    //Método train. Encuentra unos centroides como representantes de cada grupo.
     @Override
     public void train(Table data) {
 

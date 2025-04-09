@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="si">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +186,7 @@
       <workItem from="1744058948562" duration="1257000" />
       <workItem from="1744180604705" duration="253000" />
       <workItem from="1744180869507" duration="182000" />
-      <workItem from="1744181180903" duration="1462000" />
+      <workItem from="1744181180903" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -421,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744181616026</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="si">
+      <option name="closed" value="true" />
+      <created>1744182745145</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1744182745145</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
