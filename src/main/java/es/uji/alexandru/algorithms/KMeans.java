@@ -10,8 +10,8 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numClusters; // número de grupos
     private final int numIterations; // iteraciones
     private final long seed; //semilla
-    private final Map<Integer, List<Double>> centroides=new HashMap<>();
-    private final Distance distance;
+    private final Map<Integer, List<Double>> centroides=new HashMap<>();// centroides
+    private final Distance distance; // Objeto Distance
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
     public KMeans(int numClusters, int numIterations, long seed, Distance distance) {
