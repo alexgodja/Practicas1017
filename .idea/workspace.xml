@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="18-03">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/FileReader.java" afterDir="false" />
+    <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="si">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/ReaderTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/ReaderTemplate.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,6 +184,9 @@
       <workItem from="1743587260977" duration="88000" />
       <workItem from="1743588624557" duration="8000" />
       <workItem from="1744058948562" duration="1257000" />
+      <workItem from="1744180604705" duration="253000" />
+      <workItem from="1744180869507" duration="182000" />
+      <workItem from="1744181180903" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="dos ficheros">
       <option name="closed" value="true" />
@@ -403,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743173992640</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="si">
+      <option name="closed" value="true" />
+      <created>1744154168546</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744154168546</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +443,8 @@
     <MESSAGE value="1.KMeans hecho y 4. Excepciones hechas" />
     <MESSAGE value="1.KMeans hecho y 4. Excepciones" />
     <MESSAGE value="18-03" />
-    <option name="LAST_COMMIT_MESSAGE" value="18-03" />
+    <MESSAGE value="si" />
+    <option name="LAST_COMMIT_MESSAGE" value="si" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

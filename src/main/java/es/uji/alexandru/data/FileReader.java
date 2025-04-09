@@ -27,6 +27,16 @@ public class FileReader <T extends Table> extends ReaderTemplate  {
     }
 
     @Override
+    void processHeaders(String headers) {
+
+    }
+
+    @Override
+    void processData(String data) {
+
+    }
+
+    @Override
     void closeSource() {
         sc.close();
     }
