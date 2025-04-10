@@ -44,10 +44,12 @@ public class FileReader <T extends Table> extends ReaderTemplate  {
     @Override
     boolean hasMoreData() {
 
+        return false;
     }
 
     @Override
     String getNextData() {
-        return ;
+        String actual=sig
+        return null;
     }
 }

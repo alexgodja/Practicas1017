@@ -24,11 +24,15 @@ abstract class ReaderTemplate < T extends Table> {
 
     public final T readTableFromSource(){
         openSource(source);
-        processHeaders(headers);
-        processData(data);
+        if (hasMoreData()) {
+            String cabecera = getNextData();
+            processHeaders(cabecera);
+        }
+        while (hasMoreData()){
+            String data=getNextData();
+            processData(data);
+        }
         closeSource();
-        hasMoreData();
-        getNextData();
 
         return table;
     }
