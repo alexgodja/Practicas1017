@@ -1,11 +1,9 @@
 package es.uji.alexandru;// TODO: Remplazar <nombre> por el nombre de tu paquete
 
-<nombre>;
 
 // TODO: Pon los imports especificos a tu proyecto
 
-import es.uji.alexandru.algorithms.Algorithm;
-import es.uji.alexandru.algorithms.KMeans;
+import es.uji.alexandru.algorithms.*;
 import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.excepciones.LikedItemNotFoundException;
@@ -55,7 +53,7 @@ class RecSysTest {
             testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test.csv");
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
-            algorithm = new KNN();
+            algorithm = new KNN(new EuclideanDistance());
             recSys = new RecSys(algorithm);
             recSys.train(trainTable);
             recSys.initialise(testTable, testItemNames);
@@ -100,7 +98,7 @@ class RecSysTest {
             testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test_withoutnames.csv");
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
-            algorithm = new KMeans(numClusters, numIterations, seed);
+            algorithm = new KMeans(numClusters, numIterations, seed,new EuclideanDistance());
             recSys = new RecSys(algorithm);
             recSys.train(trainTable);
             recSys.initialise(testTable, testItemNames);

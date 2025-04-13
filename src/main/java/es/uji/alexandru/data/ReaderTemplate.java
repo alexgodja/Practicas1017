@@ -3,12 +3,12 @@ package es.uji.alexandru.data;
 import es.uji.alexandru.data.table.Table;
 
 import java.net.URISyntaxException;
+import java.util.List;
 
 abstract class ReaderTemplate < T extends Table> {
 
     protected String source;
     protected String headers;
-    protected String data;
     protected T table;
 
     public ReaderTemplate(String source) {
@@ -22,18 +22,17 @@ abstract class ReaderTemplate < T extends Table> {
     abstract boolean hasMoreData ();
     abstract String getNextData ();
 
-    public final T readTableFromSource(){
+    public final T readTableFromSource() throws URISyntaxException{
         openSource(source);
         if (hasMoreData()) {
-            String cabecera = getNextData();
-            processHeaders(cabecera);
+            String headersLine=getNextData();
+            processHeaders(headersLine);
         }
         while (hasMoreData()){
             String data=getNextData();
             processData(data);
         }
         closeSource();
-
         return table;
     }
 }

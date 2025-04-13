@@ -4,11 +4,16 @@ import es.uji.alexandru.data.table.Table;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class FileReader <T extends Table> extends ReaderTemplate  {
+public abstract class FileReader <T extends Table> extends ReaderTemplate  {
     Scanner sc;
+    private String siguiente;
 
     public FileReader(String source) {
         super(source);
@@ -18,38 +23,39 @@ public class FileReader <T extends Table> extends ReaderTemplate  {
     void openSource(String source) throws URISyntaxException {
         try
         {
-            String ruta = getClass().getClassLoader().getResource(source).toURI().getPath();
-            sc = new Scanner(new File(ruta));
+            URL resource = getClass().getClassLoader().getResource(source);
+            if (resource == null) {
+                throw new URISyntaxException(source, "Archivo no encontrado en recursos");
+            }
+            Path ruta= Paths.get(resource.toURI());
+
+            sc = new Scanner(ruta);
+            siguiente = sc.hasNextLine() ? sc.nextLine() : null;
+
         }
-        catch (FileNotFoundException e) {
-            throw new RuntimeException("No se ha encontrado el archivo ",e);
+        catch (IllegalArgumentException | IOException e) {
+            throw new URISyntaxException(source,"error");
         }
     }
 
-    @Override
-    void processHeaders(String headers) {
 
-    }
-
-    @Override
-    void processData(String data) {
-
-    }
 
     @Override
     void closeSource() {
-        sc.close();
+        if (sc!=null)
+            sc.close();
     }
 
     @Override
     boolean hasMoreData() {
 
-        return false;
+        return siguiente!=null;
     }
 
     @Override
     String getNextData() {
-        String actual=sig
-        return null;
+        String actual = siguiente;
+        siguiente = sc.hasNextLine() ? sc.nextLine() : null;
+        return actual;
     }
 }

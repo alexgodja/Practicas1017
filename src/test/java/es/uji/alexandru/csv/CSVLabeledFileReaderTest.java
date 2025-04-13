@@ -5,7 +5,11 @@ package es.uji.alexandru.csv;// TODO: Remplazar <nombre> por el nombre de tu paq
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import es.uji.alexandru.data.CSVLabeledFileReader;
+import es.uji.alexandru.data.table.TableWithLabels;
 
+
+import java.net.URISyntaxException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,7 +30,7 @@ class CSVLabeledFileReaderTest {
 
     // TODO: Dependiendo de cómo manejas las excepciones, puedes añadir un try/catch o un lanzamiento de excepción aquí.    
     @Test
-    void readTableFromSource() {
+    void readTableFromSource() throws URISyntaxException {
         TableWithLabels table = (TableWithLabels) reader.readTableFromSource();
         // assert that the table is not null
         assertNotNull(table);
