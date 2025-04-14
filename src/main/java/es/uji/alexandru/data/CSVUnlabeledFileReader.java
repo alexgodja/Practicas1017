@@ -2,15 +2,14 @@ package es.uji.alexandru.data;
 
 import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.data.table.Row;
-import java.awt.*;
-import java.net.URISyntaxException;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class CSVUnlabeledFileReader extends FileReader<Table> {
     private List<String> headers=new ArrayList<>();
     private List<Row> rows=new ArrayList<>();
+
     public CSVUnlabeledFileReader(String source){
         super(source);
     }

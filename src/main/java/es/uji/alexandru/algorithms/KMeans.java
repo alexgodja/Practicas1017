@@ -55,7 +55,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     }
 
     public void inicializarGrupos(){
-        grupos = new HashMap<>();            //Mapa que almacena los grupos de flores
+        grupos = new HashMap<>(); //Mapa que almacena los grupos de flores
         for (int k = 1; k <= numClusters; k++) {
             grupos.put(k, new ArrayList<>());
         }

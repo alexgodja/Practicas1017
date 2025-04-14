@@ -3,12 +3,10 @@ package es.uji.alexandru.data;
 import es.uji.alexandru.data.table.Table;
 
 import java.net.URISyntaxException;
-import java.util.List;
 
 abstract class ReaderTemplate < T extends Table> {
 
     protected String source;
-    protected String headers;
     protected T table;
 
     public ReaderTemplate(String source) {
