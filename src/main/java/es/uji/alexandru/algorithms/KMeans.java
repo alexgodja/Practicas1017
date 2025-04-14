@@ -11,6 +11,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     private final int numIterations; // iteraciones
     private final long seed; //semilla
     private final Map<Integer, List<Double>> centroides=new HashMap<>();// centroides
+    private Map<Integer,List<Row>> grupos; //Mapa que almacena los grupos de flores
     private final Distance distance; // Objeto Distance
 
     // Constructor. Almacena número de grupos, iteraciones y semilla.
@@ -30,9 +31,9 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
             throw new InvalidClusterNumberException(numClusters, data.getRowCount());
         }
 
+        //Para cada grupo de flores se escoge un centroide aleatoriamente la primera vez
         Random random=new Random(seed);
 
-        //Para cada grupo de flores se escoge un centroide aleatoriamente la primera vez
         for (int i=1;i<=numClusters;i++){
             int randomIndex = random.nextInt(data.getRowCount());
             List<Double> fila = data.getRowAt(randomIndex).getData();
@@ -41,42 +42,55 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
 
         //Asigar los datos a un grupo y recalcular los centroides numIteraciones veces
         for (int i=0; i < numIterations; i++){
-            //Mapa que almacena los grupos de flores
-            Map<Integer,List<Row>> grupos = new HashMap<>();
-            for (int k = 1; k <= numClusters; k++) {
-                grupos.put(k, new ArrayList<>());
-            }
+            //Se inicializan los grupos
+            inicializarGrupos();
 
             //Añadir cada punto a su grupo correspondiente
-            for(int j = 0; j < data.getRowCount(); j++)
-            {
-                Row fila = data.getRowAt(j);
-                List<Double> listaDato = fila.getData();
-                int numGrupo = estimate(listaDato);
-
-                grupos.get(numGrupo).add(fila);
-            }
+            asignarPuntos(data);
 
             //Se calcula el centroide de cada grupo
-            for(int j = 1; j <= numClusters; j++)
-            {
-                List<Row> filasGrupo = grupos.get(j);
-
-                int numDatos = filasGrupo.getFirst().getData().size();
-                List<Double> centroideRecalculado = new ArrayList<>();
-
-                //Se obtiene cada coordenada del centroide recalculado
-                for (int k = 0; k < numDatos; k++) {
-                    double sumatorioDato = 0;
-                    for (Row fila : filasGrupo)
-                        sumatorioDato += fila.getData().get(k);
-                    centroideRecalculado.add(sumatorioDato / filasGrupo.size());
-                }
-
-                centroides.put(j, centroideRecalculado);
-            }
+            calculoCentroides();
         }
 
+    }
+
+    public void inicializarGrupos(){
+        grupos = new HashMap<>();            //Mapa que almacena los grupos de flores
+        for (int k = 1; k <= numClusters; k++) {
+            grupos.put(k, new ArrayList<>());
+        }
+    }
+
+    public void asignarPuntos(Table data) {
+        for(int j = 0; j < data.getRowCount(); j++)
+        {
+            Row fila = data.getRowAt(j);
+            List<Double> listaDato = fila.getData();
+            int numGrupo = estimate(listaDato);
+
+            grupos.get(numGrupo).add(fila);
+        }
+    }
+
+
+    public void calculoCentroides(){
+        for(int j = 1; j <= numClusters; j++)
+        {
+            List<Row> filasGrupo = grupos.get(j);
+
+            int numDatos = filasGrupo.getFirst().getData().size();
+            List<Double> centroideRecalculado = new ArrayList<>();
+
+            //Se obtiene cada coordenada del centroide recalculado
+            for (int k = 0; k < numDatos; k++) {
+                double sumatorioDato = 0;
+                for (Row fila : filasGrupo)
+                    sumatorioDato += fila.getData().get(k);
+                centroideRecalculado.add(sumatorioDato / filasGrupo.size());
+            }
+
+            centroides.put(j, centroideRecalculado);
+        }
     }
 
     //Determina el grupo al que pertenece un punto
