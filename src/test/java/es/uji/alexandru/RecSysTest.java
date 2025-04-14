@@ -4,7 +4,7 @@ package es.uji.alexandru;// TODO: Remplazar <nombre> por el nombre de tu paquete
 // TODO: Pon los imports especificos a tu proyecto
 
 import es.uji.alexandru.algorithms.*;
-import es.uji.alexandru.data.CSV;
+import es.uji.alexandru.data.CSVLabeledFileReader;
 import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.excepciones.LikedItemNotFoundException;
 import es.uji.alexandru.recommender.RecSys;
@@ -49,8 +49,8 @@ class RecSysTest {
         @BeforeEach
         // TODO: añadir o eliminar excepciones según tu implementación
         void setUp() throws IOException, URISyntaxException {
-            trainTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_train.csv");
-            testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test.csv");
+            trainTable = new CSVLabeledFileReader(songsFolder + separator + "songs_train.csv").readTableFromSource();
+            testTable = new CSVLabeledFileReader(songsFolder + separator + "songs_test.csv").readTableFromSource();
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
             algorithm = new KNN(new EuclideanDistance());
@@ -94,8 +94,8 @@ class RecSysTest {
         @BeforeEach
         // TODO: añadir o eliminar excepciones según tu implementación
         void setUp() throws IOException, URISyntaxException {
-            trainTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_train_withoutnames.csv");
-            testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test_withoutnames.csv");
+            trainTable = new CSVLabeledFileReader(songsFolder + separator + "songs_train_withoutnames.csv").readTableFromSource();
+            testTable = new CSVLabeledFileReader(songsFolder + separator + "songs_test_withoutnames.csv").readTableFromSource();
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
             algorithm = new KMeans(numClusters, numIterations, seed,new EuclideanDistance());

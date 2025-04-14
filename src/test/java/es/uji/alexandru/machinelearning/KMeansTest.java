@@ -6,8 +6,8 @@ package es.uji.alexandru.machinelearning;
 
 import es.uji.alexandru.algorithms.Distance;
 import es.uji.alexandru.algorithms.EuclideanDistance;
-import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.algorithms.KMeans;
+import es.uji.alexandru.data.CSVLabeledFileReader;
 import es.uji.alexandru.data.table.TableWithLabels;
 import es.uji.alexandru.excepciones.InvalidClusterNumberException;
 import org.junit.jupiter.api.AfterEach;
@@ -34,7 +34,7 @@ class KMeansTest {
     @BeforeEach
     // TODO: En caso de manejar la excepción IOException en CSV, puedes eliminarla aquí
     void setUp() throws InvalidClusterNumberException, IOException, URISyntaxException {
-        iris = new CSV().readTableWithLabels("iris.csv");
+        iris = (TableWithLabels) new CSVLabeledFileReader("iris.csv").readTableFromSource();
         kMeans = new KMeans(irisClusters, numIterations, seed,distance);
         kMeans.train(iris);
     }

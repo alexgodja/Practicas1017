@@ -43,5 +43,8 @@ public class Table {
     public int getRowCount() {
         return rows.size();
     }
+    public void addRow(Row row) {
+        rows.add(row);
+    }
 
 }

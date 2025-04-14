@@ -3,7 +3,9 @@ package es.uji.alexandru;
 import es.uji.alexandru.algorithms.*;
 import es.uji.alexandru.recommender.RecSys;
 import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.data.CSV;
+import es.uji.alexandru.data.CSVLabeledFileReader;
+import es.uji.alexandru.data.CSVUnlabeledFileReader;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -33,10 +35,9 @@ class SongRecSys {
         // Tables
         Map<String, Table> tables = new HashMap<>();
         String [] stages = {"train", "test"};
-        CSV csv = new CSV();
         for (String stage : stages) {
-            tables.put("knn" + stage, csv.readTableWithLabels(filenames.get("knn" + stage)));
-            tables.put("kmeans" + stage, csv.readTable(filenames.get("kmeans" + stage)));
+            tables.put("knn" + stage, new CSVLabeledFileReader(filenames.get("knn" + stage)).readTableFromSource());
+            tables.put("kmeans" + stage, new CSVUnlabeledFileReader(filenames.get("kmeans" + stage)).readTableFromSource());
         }
 
         // Names of items

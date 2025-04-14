@@ -5,7 +5,7 @@ package es.uji.alexandru.machinelearning;
 import es.uji.alexandru.algorithms.Distance;
 import es.uji.alexandru.algorithms.EuclideanDistance;
 import es.uji.alexandru.algorithms.KNN;
-import es.uji.alexandru.data.CSV;
+import es.uji.alexandru.data.CSVLabeledFileReader;
 import es.uji.alexandru.data.table.TableWithLabels;
 
 import org.junit.jupiter.api.AfterEach;
@@ -29,7 +29,7 @@ class KNNTest {
 
     @BeforeEach
     void setUp() throws IOException, URISyntaxException {
-        TableWithLabels iris = new CSV().readTableWithLabels("iris.csv");
+        TableWithLabels iris = (TableWithLabels) new CSVLabeledFileReader("iris.csv").readTableFromSource();
         knn = new KNN(distance);
         knn.train(iris);
     }

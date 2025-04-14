@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="si">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSVLabeledFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSVLabeledFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/RecSysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/RecSysTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/SongRecSys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/SongRecSys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/csv/CSVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KMeansTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,54 +57,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.SongRecSys.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in Practicas1017.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CSVTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KMeansTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KNNTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TableWithLabelsTest.getLabelAsInteger.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in Practicas1017.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/IdeaProjects/Practicas1017&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SongRecSys.executor": "Run",
+    "JUnit.All in Practicas1017.executor": "Run",
+    "JUnit.CSVLabeledFileReaderTest.executor": "Run",
+    "JUnit.CSVTest.executor": "Run",
+    "JUnit.CSVUnlabeledFileReaderTest.executor": "Run",
+    "JUnit.KMeansTest.executor": "Run",
+    "JUnit.KNNTest.executor": "Run",
+    "JUnit.RecSysTest.executor": "Run",
+    "JUnit.TableTest.executor": "Run",
+    "JUnit.TableWithLabelsTest.executor": "Run",
+    "JUnit.TableWithLabelsTest.getLabelAsInteger.executor": "Run",
+    "JUnit.java in Practicas1017.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alexe/IdeaProjects/Practicas1017",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/al435145/IdeaProjects/Practicas1017/src/main/java/es/uji/alexandru/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Practicas1017">
-    <configuration name="SongRecSys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.SongRecSys" />
-      <module name="Practicas1017" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in Practicas1017" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,40 +103,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMeansTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVLabeledFileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.machinelearning.*" />
+          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KMeansTest" />
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVLabeledFileReaderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KNNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="es.uji.alexandru.machinelearning.*" />
+          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="es.uji.alexandru.machinelearning" />
-      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.machinelearning.KNNTest" />
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java in Practicas1017" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CSVUnlabeledFileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practicas1017" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.csv.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru.csv" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.csv.CSVUnlabeledFileReaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecSysTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practicas1017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.alexandru.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.alexandru" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.alexandru.RecSysTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Practicas1017" />
-        <item itemvalue="Application.SongRecSys" />
-        <item itemvalue="JUnit.java in Practicas1017" />
-        <item itemvalue="JUnit.KMeansTest" />
-        <item itemvalue="JUnit.KNNTest" />
+        <item itemvalue="JUnit.RecSysTest" />
+        <item itemvalue="JUnit.CSVLabeledFileReaderTest" />
+        <item itemvalue="JUnit.CSVTest" />
+        <item itemvalue="JUnit.CSVUnlabeledFileReaderTest" />
       </list>
     </recent_temporary>
   </component>
