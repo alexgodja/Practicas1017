@@ -1,10 +1,8 @@
 package es.uji.alexandru.data;
 
 import es.uji.alexandru.data.table.RowWithLabel;
-import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.data.table.TableWithLabels;
 
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 

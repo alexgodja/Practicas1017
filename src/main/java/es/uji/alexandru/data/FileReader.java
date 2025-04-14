@@ -2,8 +2,6 @@ package es.uji.alexandru.data;
 
 import es.uji.alexandru.data.table.Table;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
