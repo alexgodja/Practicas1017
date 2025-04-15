@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b19955-5fb2-42bc-a435-035f497f6237" name="Changes" comment="CSV">
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/algorithms/KNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSVLabeledFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/CSVLabeledFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/alexandru/data/table/TableWithLabels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/RecSysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/RecSysTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/alexandru/machinelearning/KNNTest.java" afterDir="false" />
     </list>
     <list id="c4929f5e-6c8f-4530-a3fc-c81943946158" name="Changes by al450630" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.SongRecSys.executor": "Run",
-    "JUnit.All in Practicas1017.executor": "Debug",
+    "JUnit.All in Practicas1017.executor": "Run",
     "JUnit.CSVTest.executor": "Run",
     "JUnit.CSVTest.readTable.executor": "Debug",
     "JUnit.KMeansTest.executor": "Run",

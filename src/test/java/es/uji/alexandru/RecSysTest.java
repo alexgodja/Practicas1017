@@ -95,8 +95,8 @@ class RecSysTest {
         @BeforeEach
             // TODO: añadir o eliminar excepciones según tu implementación
         void setUp() throws IOException, URISyntaxException {
-            trainTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_train_withoutnames.csv");
-            testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test_withoutnames.csv");
+            trainTable = new CSVLabeledFileReader(songsFolder + separator + "songs_train_withoutnames.csv").readTableFromSource();
+            testTable = new CSVLabeledFileReader(songsFolder + separator + "songs_test_withoutnames.csv").readTableFromSource();
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
             algorithm = new KMeans(numClusters, numIterations, seed,new EuclideanDistance());
