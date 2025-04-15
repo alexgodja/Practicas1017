@@ -4,6 +4,7 @@ package es.uji.alexandru;// TODO: Remplazar <nombre> por el nombre de tu paquete
 // TODO: Pon los imports especificos a tu proyecto
 
 import es.uji.alexandru.algorithms.*;
+import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.data.CSVLabeledFileReader;
 import es.uji.alexandru.data.table.Table;
 import es.uji.alexandru.excepciones.LikedItemNotFoundException;
@@ -47,7 +48,7 @@ class RecSysTest {
     class KNNRecSys {
 
         @BeforeEach
-        // TODO: añadir o eliminar excepciones según tu implementación
+            // TODO: añadir o eliminar excepciones según tu implementación
         void setUp() throws IOException, URISyntaxException {
             trainTable = new CSVLabeledFileReader(songsFolder + separator + "songs_train.csv").readTableFromSource();
             testTable = new CSVLabeledFileReader(songsFolder + separator + "songs_test.csv").readTableFromSource();
@@ -92,10 +93,10 @@ class RecSysTest {
         private long seed = 53;
 
         @BeforeEach
-        // TODO: añadir o eliminar excepciones según tu implementación
+            // TODO: añadir o eliminar excepciones según tu implementación
         void setUp() throws IOException, URISyntaxException {
-            trainTable = new CSVLabeledFileReader(songsFolder + separator + "songs_train_withoutnames.csv").readTableFromSource();
-            testTable = new CSVLabeledFileReader(songsFolder + separator + "songs_test_withoutnames.csv").readTableFromSource();
+            trainTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_train_withoutnames.csv");
+            testTable = new CSV().readTableWithLabels(songsFolder + separator + "songs_test_withoutnames.csv");
             testItemNames = readNames(songsFolder + separator + "songs_test_names.csv");
 
             algorithm = new KMeans(numClusters, numIterations, seed,new EuclideanDistance());

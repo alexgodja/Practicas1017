@@ -5,6 +5,7 @@ package es.uji.alexandru.machinelearning;
 import es.uji.alexandru.algorithms.Distance;
 import es.uji.alexandru.algorithms.EuclideanDistance;
 import es.uji.alexandru.algorithms.KNN;
+import es.uji.alexandru.data.CSV;
 import es.uji.alexandru.data.CSVLabeledFileReader;
 import es.uji.alexandru.data.table.TableWithLabels;
 

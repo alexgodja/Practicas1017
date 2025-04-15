@@ -1,6 +1,5 @@
 package es.uji.alexandru.data;
 
-import es.uji.alexandru.data.table.Row;
 import es.uji.alexandru.data.table.RowWithLabel;
 import es.uji.alexandru.data.table.TableWithLabels;
 
@@ -34,7 +33,7 @@ public class CSVLabeledFileReader extends FileReader<TableWithLabels> {
             datos.add(Double.parseDouble(valores[i].trim()));
         }
         rows.add(new RowWithLabel(datos, etiqueta));
-        table.addRow(new RowWithLabel(datos,etiqueta));
+        table=new TableWithLabels(headers,rows);
 
     }
 }

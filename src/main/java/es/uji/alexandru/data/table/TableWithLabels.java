@@ -40,14 +40,12 @@ public class TableWithLabels extends Table {
     }
 
     public void addRow(RowWithLabel row) {
-        // Añade la fila a la lista de la clase padre (Table)
-        super.addRow(row);
-
-        // Actualiza el mapa de etiquetas
-        String label = row.getLabel();
+        String label = row.getLabel().trim();
         if (!labelsToIndex.containsKey(label)) {
-            labelsToIndex.put(label, labelsToIndex.size());
+            labelsToIndex.put(label, labelsToIndex.size()); // Asigna el índice correcto
         }
+        super.addRow(row); // Añade la fila a la lista de Table
+
     }
 
 }
