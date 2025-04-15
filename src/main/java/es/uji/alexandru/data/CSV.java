@@ -9,13 +9,11 @@ public class CSV {
 
     //Lee la tabla sin etiquetas del archivo que se pasa
     public Table readTable(String archivo) throws URISyntaxException {
-        CSVUnlabeledFileReader reader = new CSVUnlabeledFileReader(archivo);
-        return reader.readTableFromSource();
+        return new CSVUnlabeledFileReader(archivo).readTableFromSource();
     }
 
     //Lee la tabla con etiquetas del archivo que se pasa
     public TableWithLabels readTableWithLabels(String archivo) throws URISyntaxException {
-        CSVLabeledFileReader reader = new CSVLabeledFileReader(archivo);
-        return (TableWithLabels) reader.readTableFromSource();
+        return (TableWithLabels) new CSVLabeledFileReader(archivo).readTableFromSource();
     }
 }
