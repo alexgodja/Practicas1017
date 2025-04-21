@@ -1,7 +1,7 @@
-package es.uji.alexandru.data;
+package Modelo.data;
 
-import es.uji.alexandru.data.table.RowWithLabel;
-import es.uji.alexandru.data.table.TableWithLabels;
+import Modelo.data.table.RowWithLabel;
+import Modelo.data.table.TableWithLabels;
 
 import java.util.ArrayList;
 import java.util.List;

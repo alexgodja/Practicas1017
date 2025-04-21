@@ -1,8 +1,8 @@
-package es.uji.alexandru.recommender;
+package Modelo.recommender;
 
-import es.uji.alexandru.algorithms.Algorithm;
-import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.excepciones.LikedItemNotFoundException;
+import Modelo.algorithms.Algorithm;
+import Modelo.data.table.Table;
+import Modelo.excepciones.LikedItemNotFoundException;
 
 import java.util.ArrayList;
 import java.util.HashMap;

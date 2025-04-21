@@ -2,14 +2,11 @@
 package es.uji.alexandru.csv;
 
 // TODO: Reemplazar por los imports de tu proyecto
-import es.uji.alexandru.data.CSV;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.CSVUnlabeledFileReader;
-import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.data.table.TableWithLabels;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.CSVUnlabeledFileReader;
+import Modelo.data.table.Table;
+import Modelo.data.table.TableWithLabels;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -21,19 +18,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CSVTest {
 
-    private CSV csv;
     private String milesFile = "miles_dollars.csv";
     private String irisFile = "iris.csv";
 
-    @BeforeEach
-    void setUp() {
-        csv = new CSV();
-    }
-
-    @AfterEach
-    void tearDown() {
-        csv = null;
-    }
 
     @Test
     @DisplayName("CSV - readTable")

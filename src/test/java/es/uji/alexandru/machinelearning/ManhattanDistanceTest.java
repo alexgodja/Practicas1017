@@ -2,8 +2,8 @@ package es.uji.alexandru.machinelearning;// TODO: Remplazar <nombre> por el nomb
 
 // TODO: Pon los imports especificos a tu proyecto
 
-import es.uji.alexandru.algorithms.Distance;
-import es.uji.alexandru.algorithms.ManhattanDistance;
+import Modelo.algorithms.Distance;
+import Modelo.algorithms.ManhattanDistance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;

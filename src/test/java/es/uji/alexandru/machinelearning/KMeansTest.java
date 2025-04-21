@@ -4,12 +4,12 @@ package es.uji.alexandru.machinelearning;
 // TODO: Pon los imports especificos a tu proyecto
 
 
-import es.uji.alexandru.algorithms.Distance;
-import es.uji.alexandru.algorithms.EuclideanDistance;
-import es.uji.alexandru.algorithms.KMeans;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.table.TableWithLabels;
-import es.uji.alexandru.excepciones.InvalidClusterNumberException;
+import Modelo.algorithms.Distance;
+import Modelo.algorithms.EuclideanDistance;
+import Modelo.algorithms.KMeans;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.table.TableWithLabels;
+import Modelo.excepciones.InvalidClusterNumberException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

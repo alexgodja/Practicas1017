@@ -1,4 +1,4 @@
-package es.uji.alexandru.excepciones;
+package Modelo.excepciones;
 
 public class LikedItemNotFoundException extends RuntimeException{
     private String item;

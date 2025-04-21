@@ -2,12 +2,11 @@
 package es.uji.alexandru.machinelearning;
 
 // TODO: Reemplazar por los imports de tu proyecto
-import es.uji.alexandru.algorithms.Distance;
-import es.uji.alexandru.algorithms.EuclideanDistance;
-import es.uji.alexandru.algorithms.KNN;
-import es.uji.alexandru.data.CSV;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.table.TableWithLabels;
+import Modelo.algorithms.Distance;
+import Modelo.algorithms.EuclideanDistance;
+import Modelo.algorithms.KNN;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.table.TableWithLabels;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package es.uji.alexandru.algorithms;
+package Modelo.algorithms;
 
 public interface Algorithm <T,I,L>{
     void train(T data);

@@ -1,6 +1,6 @@
-package es.uji.alexandru.data;
+package Modelo.data;
 
-import es.uji.alexandru.data.table.Table;
+import Modelo.data.table.Table;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

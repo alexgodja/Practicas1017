@@ -1,10 +1,10 @@
 package es.uji.alexandru;
 
-import es.uji.alexandru.algorithms.*;
-import es.uji.alexandru.recommender.RecSys;
-import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.CSVUnlabeledFileReader;
+import Modelo.algorithms.*;
+import Modelo.recommender.RecSys;
+import Modelo.data.table.Table;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.CSVUnlabeledFileReader;
 
 
 import java.io.File;

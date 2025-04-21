@@ -5,8 +5,8 @@ package es.uji.alexandru.csv;// TODO: Remplazar <nombre> por el nombre de tu paq
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.table.TableWithLabels;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.table.TableWithLabels;
 
 
 import java.net.URISyntaxException;

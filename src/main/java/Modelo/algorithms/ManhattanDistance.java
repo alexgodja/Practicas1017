@@ -1,4 +1,4 @@
-package es.uji.alexandru.algorithms;
+package Modelo.algorithms;
 
 import java.util.List;
 

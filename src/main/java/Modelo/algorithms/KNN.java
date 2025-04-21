@@ -1,7 +1,7 @@
-package es.uji.alexandru.algorithms;
+package Modelo.algorithms;
 
-import es.uji.alexandru.data.table.RowWithLabel;
-import es.uji.alexandru.data.table.TableWithLabels;
+import Modelo.data.table.RowWithLabel;
+import Modelo.data.table.TableWithLabels;
 
 import java.util.List;
 

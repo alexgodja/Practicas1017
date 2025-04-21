@@ -3,12 +3,14 @@ package es.uji.alexandru;// TODO: Remplazar <nombre> por el nombre de tu paquete
 
 // TODO: Pon los imports especificos a tu proyecto
 
-import es.uji.alexandru.algorithms.*;
-import es.uji.alexandru.data.CSV;
-import es.uji.alexandru.data.CSVLabeledFileReader;
-import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.excepciones.LikedItemNotFoundException;
-import es.uji.alexandru.recommender.RecSys;
+import Modelo.algorithms.Algorithm;
+import Modelo.algorithms.EuclideanDistance;
+import Modelo.algorithms.KMeans;
+import Modelo.algorithms.KNN;
+import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.table.Table;
+import Modelo.excepciones.LikedItemNotFoundException;
+import Modelo.recommender.RecSys;
 import org.junit.jupiter.api.*;
 
 import java.io.File;

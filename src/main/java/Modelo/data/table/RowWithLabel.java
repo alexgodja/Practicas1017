@@ -1,4 +1,4 @@
-package es.uji.alexandru.data.table;
+package Modelo.data.table;
 
 import java.util.List;
 

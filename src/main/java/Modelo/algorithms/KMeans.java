@@ -1,8 +1,8 @@
-package es.uji.alexandru.algorithms;
+package Modelo.algorithms;
 
-import es.uji.alexandru.data.table.Row;
-import es.uji.alexandru.data.table.Table;
-import es.uji.alexandru.excepciones.InvalidClusterNumberException;
+import Modelo.data.table.Row;
+import Modelo.data.table.Table;
+import Modelo.excepciones.InvalidClusterNumberException;
 
 import java.util.*;
 
