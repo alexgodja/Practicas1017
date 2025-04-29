@@ -1,6 +1,7 @@
 package Vista;
 
 public interface InformaVista {
-    void entradaActualCambiada();
-    void nuevaEntrada();
+    void actualizarListaCanciones();
+    void mostrarRecomendaciones();
+    void habilitarBoton();
 }

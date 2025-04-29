@@ -49,18 +49,32 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
 
 
     @Override
-    public void entradaActualCambiada() {
+    public void actualizarListaCanciones() {
 
     }
 
     @Override
-    public void nuevaEntrada() {
+    public void mostrarRecomendaciones() {
 
     }
 
     @Override
-    public String getEntrada() {
+    public void habilitarBoton() {
+
+    }
+
+    @Override
+    public String getAlgoritmo() {
         return "";
     }
 
+    @Override
+    public String getDistancia() {
+        return "";
+    }
+
+    @Override
+    public int getNumRecomendaciones() {
+        return 0;
+    }
 }

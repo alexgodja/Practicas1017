@@ -1,5 +1,7 @@
 package Vista;
 
 public interface InterrogaVista {
-    String getEntrada();
+    public String getAlgoritmo();
+    public String getDistancia();
+    public int getNumRecomendaciones();
 }
