@@ -2,6 +2,7 @@ package Modelo.algorithms;
 
 import Modelo.data.table.Row;
 import Modelo.data.table.Table;
+
 import Modelo.excepciones.InvalidClusterNumberException;
 
 import java.util.*;
