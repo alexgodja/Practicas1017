@@ -14,8 +14,6 @@ import javafx.stage.Stage;
 
 public class ImplementacionVista implements InterrogaVista, InformaVista {
     private final Stage stage;
-    private TextField tfNombre;
-    private Label lContador;
     private Controlador controlador;
     private InterrogaModelo modelo;
 
@@ -45,13 +43,9 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         bAdelante.setOnAction(actionEvent -> controlador.adelante());
 
         HBox fpEntrada = new HBox(10, label, bNuevo, bAtras, bAdelante);
-        lContador = new Label(infoEstadoEntradas());
-        HBox fpContador = new HBox(lContador);
-        fpContador.setAlignment(Pos.CENTER);
+        fpEntrada.setAlignment(Pos.CENTER); // Opcional, para centrar los elementos
 
-        VBox fpFinal = new VBox(10, fpEntrada, fpContador);
-
-        Scene scene = new Scene(fpFinal);
+        Scene scene = new Scene(fpEntrada, 400, 100); // Ancho y alto de la ventana
         stage.setScene(scene);
         stage.show();
     }
@@ -72,9 +66,4 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         return "";
     }
 
-    private String infoEstadoEntradas() {
-        return "Numero de entradas: " +
-                modelo.getPoscionEntradaActual() + " de " +
-                modelo.getNumeroEntradas();
-    }
 }
