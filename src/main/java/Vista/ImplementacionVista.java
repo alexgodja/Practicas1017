@@ -2,18 +2,18 @@ package Vista;
 
 import Modelo.InterrogaModelo;
 import Controlador.Controlador;
+import Modelo.data.CSVUnlabeledFileReader;
+import Modelo.data.table.Table;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.net.URISyntaxException;
 import java.util.List;
 
 
@@ -34,27 +34,43 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         this.controlador = controlador;
     }
 
-    public void creaGUI() {
+    public void creaGUI() throws URISyntaxException {
 
-        //PRUEBA
-        VBox leftPanel = new VBox(10);
-        Label recomendacion =new Label("Tipo de recomendación");
+        Label subtitulo1 =new Label("CARACTERÍSTICAS");
+
+        Label tipoRecomendación =new Label("TIPO RECOMENDACIÓN");
         ObservableList<String> tiposRecomendaciones = FXCollections.observableArrayList("Género","Similitudes");
-        ComboBox<String> combo = new ComboBox<>(tiposRecomendaciones);
+        ComboBox<String> elegirRecomendacion = new ComboBox<>(tiposRecomendaciones);
 
+        Label tipoDeDistancia = new Label("TIPO DE DISTANCIA");
+        ObservableList<String> tiposDistancia = FXCollections.observableArrayList("Euclidea","Manhattan");
+        ComboBox<String> elegirDistancia = new ComboBox<>(tiposDistancia);
+        Label nRecom = new Label("Número de recomendaciones:");
+        TextField numRecom = new TextField("5");
 
-        //EJEMPLO
-        Label label=new Label("Diego es gay?");
-        Button bNuevo = new Button("Si");
+        VBox panelIzquierda = new VBox(10,subtitulo1,elegirRecomendacion,tipoDeDistancia,elegirDistancia,nRecom,numRecom);
+        panelIzquierda.setAlignment(Pos.TOP_LEFT);
 
-        Button bAtras = new Button("Obvio");
+        Label subtitulo2 = new Label("Escoge una canción");
 
-        Button bAdelante = new Button("no hay otra opcion correcta");
+        ObservableList<String> canciones = FXCollections.observableArrayList();
+        for (int i = 1; i <= 50; i++) {
+            canciones.add("Canción " + i);
+        }
 
-        HBox fpEntrada = new HBox(10, label, bNuevo, bAtras, bAdelante);
-        fpEntrada.setAlignment(Pos.CENTER); // Opcional, para centrar los elementos
+        ListView<String> listaCanciones = new ListView<>(canciones);
+        listaCanciones.setPrefHeight(400); // Ajusta altura visible
 
-        Scene scene = new Scene(fpEntrada, 400, 100); // Ancho y alto de la ventana
+        listaCanciones.getSelectionModel().setSelectionMode(SelectionMode.SINGLE); // o MULTIPLE
+
+        VBox panelCentro = new VBox(10, subtitulo2, listaCanciones);
+        panelCentro.setAlignment(Pos.TOP_CENTER);
+
+        Label subtitulo3 = new Label("Recomendaciones:");
+        VBox panelDerecha = new VBox(subtitulo3);
+
+        HBox todo = new HBox(50,panelIzquierda,panelCentro,panelDerecha);
+        Scene scene = new Scene(todo, 800, 500);
         stage.setScene(scene);
         stage.show();
     }
