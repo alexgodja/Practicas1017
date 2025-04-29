@@ -4,7 +4,13 @@ import Controlador.ImplementacionControlador;
 import Modelo.ImplementacionModelo;
 import Vista.ImplementacionVista;
 import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import java.awt.*;
 
 public class MainApp extends Application {
 
