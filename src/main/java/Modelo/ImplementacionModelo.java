@@ -1,10 +1,15 @@
 package Modelo;
 
+import Vista.ImplementacionVista;
 import Vista.InformaVista;
 
 public class ImplementacionModelo implements CambioModelo,
         InterrogaModelo {
     private InformaVista vista;
+
+    public void setVista(InformaVista vista) {
+        this.vista = vista;
+    }
 
     @Override
     public void anyadeEntrada(String entrada) {
@@ -35,4 +40,5 @@ public class ImplementacionModelo implements CambioModelo,
     public int getPoscionEntradaActual() {
         return 0;
     }
+
 }

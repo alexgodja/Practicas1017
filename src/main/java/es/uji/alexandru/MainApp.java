@@ -1,14 +1,10 @@
 package es.uji.alexandru;
 
 import Controlador.ImplementacionControlador;
+import Modelo.ImplementacionModelo;
+import Vista.ImplementacionVista;
 import javafx.application.Application;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import java.awt.*;
 
 public class MainApp extends Application {
 
@@ -17,16 +13,15 @@ public class MainApp extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage stage) throws Exception {
         ImplementacionControlador controlador = new ImplementacionControlador();
-
-        VBox layout =new VBox();
-        Label label=new Label("Hola");
-        Button button=new Button("Diego es gay xd");
-        layout.getChildren().addAll(label,button);
-        layout.setAlignment(Pos.CENTER);
-        primaryStage.setScene(new Scene(layout,200,100));
-        primaryStage.setTitle("Recomendador");
-        primaryStage.show();
+        ImplementacionModelo modelo = new ImplementacionModelo();
+        ImplementacionVista vista = new ImplementacionVista(stage);
+        modelo.setVista(vista);
+        controlador.setVista(vista);
+        controlador.setModelo(modelo);
+        vista.setModelo(modelo);
+        vista.setControlador(controlador);
+        vista.creaGUI();
     }
 }
