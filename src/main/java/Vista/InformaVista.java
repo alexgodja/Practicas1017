@@ -1,7 +1,9 @@
 package Vista;
 
+import java.util.List;
+
 public interface InformaVista {
-    void actualizarListaCanciones();
-    void mostrarRecomendaciones();
-    void habilitarBoton();
+    void actualizarListaCanciones(List<String> canciones);
+    void mostrarRecomendaciones(List<String> recomendaciones);
+    void habilitarBoton(boolean habilitar);
 }

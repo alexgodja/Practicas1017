@@ -2,14 +2,19 @@ package Vista;
 
 import Modelo.InterrogaModelo;
 import Controlador.Controlador;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.List;
 
 
 public class ImplementacionVista implements InterrogaVista, InformaVista {
@@ -32,6 +37,13 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     public void creaGUI() {
 
         //PRUEBA
+        VBox leftPanel = new VBox(10);
+        Label recomendacion =new Label("Tipo de recomendación");
+        ObservableList<String> tiposRecomendaciones = FXCollections.observableArrayList("Género","Similitudes");
+        ComboBox<String> combo = new ComboBox<>(tiposRecomendaciones);
+
+
+        //EJEMPLO
         Label label=new Label("Diego es gay?");
         Button bNuevo = new Button("Si");
 
@@ -47,19 +59,18 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         stage.show();
     }
 
-
     @Override
-    public void actualizarListaCanciones() {
+    public void actualizarListaCanciones(List<String> canciones) {
 
     }
 
     @Override
-    public void mostrarRecomendaciones() {
+    public void mostrarRecomendaciones(List<String> recomendaciones) {
 
     }
 
     @Override
-    public void habilitarBoton() {
+    public void habilitarBoton(boolean habilitar) {
 
     }
 
@@ -77,4 +88,5 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
     public int getNumRecomendaciones() {
         return 0;
     }
+
 }
