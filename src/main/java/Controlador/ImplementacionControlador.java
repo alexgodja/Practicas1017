@@ -17,18 +17,6 @@ public class ImplementacionControlador implements Controlador {
         this.vista = vista;
     }
 
-    @Override
-    public void anyadeEntrada() {
 
-    }
 
-    @Override
-    public void adelante() {
-
-    }
-
-    @Override
-    public void atras() {
-
-    }
 }

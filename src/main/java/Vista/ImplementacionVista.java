@@ -34,13 +34,10 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         //PRUEBA
         Label label=new Label("Diego es gay?");
         Button bNuevo = new Button("Si");
-        bNuevo.setOnAction(actionEvent -> controlador.anyadeEntrada());
 
         Button bAtras = new Button("Obvio");
-        bAtras.setOnAction(actionEvent -> controlador.atras());
 
         Button bAdelante = new Button("no hay otra opcion correcta");
-        bAdelante.setOnAction(actionEvent -> controlador.adelante());
 
         HBox fpEntrada = new HBox(10, label, bNuevo, bAtras, bAdelante);
         fpEntrada.setAlignment(Pos.CENTER); // Opcional, para centrar los elementos
