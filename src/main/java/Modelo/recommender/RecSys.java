@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class RecSys{
-    private Algorithm algorithm;
+    private Algorithm algorithm; //Algoritmo genérico a usar
     private Table trainData;
     private Table testData;
     private List<String> testItemNames;

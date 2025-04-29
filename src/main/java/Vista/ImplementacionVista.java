@@ -1,5 +1,9 @@
 package Vista;
 
+import Modelo.InterrogaModelo;
+import Controlador.Controlador;
+
+
 public class ImplementacionVista implements InterrogaVista, InformaVista {
     private Controlador controlador;
     private InterrogaModelo modelo;
