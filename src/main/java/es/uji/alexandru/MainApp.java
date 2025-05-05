@@ -29,5 +29,6 @@ public class MainApp extends Application {
         vista.setModelo(modelo);
         vista.setControlador(controlador);
         vista.creaGUI();
+
     }
 }
