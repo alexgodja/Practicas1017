@@ -1,8 +1,8 @@
 package Modelo.excepciones;
 
 public class InvalidClusterNumberException extends IllegalArgumentException {
-    private int numClusters;
-    private int rowCount;
+    private final int numClusters;
+    private final int rowCount;
 
     public InvalidClusterNumberException(int numClusters, int rowCount) {
         this.numClusters = numClusters;

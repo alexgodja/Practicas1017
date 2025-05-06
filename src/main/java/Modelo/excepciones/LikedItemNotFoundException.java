@@ -1,7 +1,7 @@
 package Modelo.excepciones;
 
 public class LikedItemNotFoundException extends RuntimeException{
-    private String item;
+    private final String item;
     public LikedItemNotFoundException(String item){
         this.item=item;
     }

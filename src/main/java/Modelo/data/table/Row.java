@@ -3,7 +3,7 @@ package Modelo.data.table;
 import java.util.List;
 
 public class Row {
-    private List<Double> data;
+    private final List<Double> data;
 
     //Constructor Fila
     public Row(List<Double>data){

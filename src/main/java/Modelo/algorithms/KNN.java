@@ -3,14 +3,11 @@ package Modelo.algorithms;
 import Modelo.data.table.RowWithLabel;
 import Modelo.data.table.TableWithLabels;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
     private TableWithLabels trainingData;
-    private Distance distance;
+    private final Distance distance;
 
     public KNN (Distance distance)
     {

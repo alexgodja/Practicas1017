@@ -3,7 +3,7 @@ package Modelo.data.table;
 import java.util.List;
 
 public class RowWithLabel extends Row {
-    private String label;
+    private final String label;
 
     //Constructor RowWithLabel
     public RowWithLabel(List<Double> data, String label) {

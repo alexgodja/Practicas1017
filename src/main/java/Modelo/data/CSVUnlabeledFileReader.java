@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVUnlabeledFileReader extends FileReader<Table> {
-    private List<String> headers=new ArrayList<>();
-    private List<Row> rows=new ArrayList<>();
+    private final List<String> headers=new ArrayList<>();
+    private final List<Row> rows=new ArrayList<>();
 
     public CSVUnlabeledFileReader(String source){
         super(source);
