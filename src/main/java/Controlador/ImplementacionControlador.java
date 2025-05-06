@@ -1,22 +1,48 @@
 package Controlador;
 
-import Modelo.CambioModelo;
+import Modelo.InterrogaModelo;
+import Vista.InformaVista;
 import Vista.InterrogaVista;
 
+import java.util.List;
+
 public class ImplementacionControlador implements Controlador {
-    private InterrogaVista vista;
-    private CambioModelo modelo;
+    private InterrogaModelo modelo;
+    private InformaVista informaVista;
+    private InterrogaVista interrogaVista;
 
-    public ImplementacionControlador() {}
-
-    public void setModelo(CambioModelo modelo) {
+    @Override
+    public void setModelo(InterrogaModelo modelo) {
         this.modelo = modelo;
     }
 
-    public void setVista(InterrogaVista vista) {
-        this.vista = vista;
+    @Override
+    public void setVista(Object vista) {
+        // Vista implementa tanto InformaVista como InterrogaVista
+        this.informaVista  = (InformaVista) vista;
+        this.interrogaVista = (InterrogaVista) vista;
     }
 
+    /**
+     * Llamado desde la vista cuando el usuario pulsa "Generar recomendaciones".
+     * Recupera los parámetros desde la vista, invoca al modelo y vuelca el resultado
+     * de nuevo en la vista.
+     */
+    public void EventoGenerarRecomendaciones() {
+        try {
+            String algoritmo  = interrogaVista.getAlgoritmo();
+            String distancia  = interrogaVista.getDistancia();
+            String cancion    = interrogaVista.getCancionSeleccionada();
+            int    numRecs    = interrogaVista.getNumRecomendaciones();
 
+            List<String> recs = modelo.generarRecomendaciones(
+                    algoritmo, distancia, cancion, numRecs
+            );
 
+            informaVista.mostrarRecomendaciones(recs);
+
+        } catch (Exception e) {
+            System.out.println("Error al generar recomendaciones");
+        }
+    }
 }

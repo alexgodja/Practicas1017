@@ -3,7 +3,10 @@ package Modelo.algorithms;
 import Modelo.data.table.RowWithLabel;
 import Modelo.data.table.TableWithLabels;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
     private TableWithLabels trainingData;
@@ -34,4 +37,5 @@ public class KNN implements Algorithm<TableWithLabels,Integer,List<Double>> {
         }
         return closestLabel;
     }
+
 }

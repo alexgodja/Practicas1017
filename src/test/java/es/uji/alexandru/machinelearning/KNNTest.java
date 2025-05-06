@@ -28,7 +28,7 @@ class KNNTest {
     private Distance distance = new EuclideanDistance();
 
     @BeforeEach
-    void setUp() throws IOException, URISyntaxException {
+    void setUp() throws URISyntaxException {
         TableWithLabels iris = (TableWithLabels) new CSVLabeledFileReader("iris.csv").readTableFromSource();
         knn = new KNN(distance);
         knn.train(iris);
