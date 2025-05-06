@@ -15,13 +15,17 @@ import java.util.stream.Collectors;
 public class ImplementacionModelo implements InterrogaModelo {
 
 
+    private final String songsFolder = "recommender";
+    private final String separator = System.getProperty("file.separator");
+
     public ImplementacionModelo(){}
 
     //InformaVista
     @Override
     public List<String> cargarListaCanciones() throws IOException, URISyntaxException {
 
-        String ruta = "songs_train_names.csv";
+
+        String ruta = songsFolder + separator  + "songs_train_names.csv";
         URL resource = getClass().getClassLoader().getResource(ruta);
         if (resource == null) {
             throw new URISyntaxException(ruta, "Archivo no encontrado");
@@ -40,7 +44,7 @@ public class ImplementacionModelo implements InterrogaModelo {
 
         // 2) Leo TODO el CSV (features + etiqueta) de golpe
         CSVLabeledFileReader reader =
-                new CSVLabeledFileReader("songs_train.csv");
+                new CSVLabeledFileReader(songsFolder + separator  + "songs_train.csv");
         TableWithLabels tabla = (TableWithLabels) reader.readTableFromSource();
 
         // 3) Índice y vector de la base
