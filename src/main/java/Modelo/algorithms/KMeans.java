@@ -3,11 +3,12 @@ package Modelo.algorithms;
 import Modelo.data.table.Row;
 import Modelo.data.table.Table;
 
+import Modelo.data.table.TableWithLabels;
 import Modelo.excepciones.InvalidClusterNumberException;
 
 import java.util.*;
 
-public class KMeans implements Algorithm<Table,Integer,List<Double>> {
+public class KMeans implements Algorithm<TableWithLabels,Integer,List<Double>> {
     private final int numClusters; // número de grupos
     private final int numIterations; // iteraciones
     private final long seed; //semilla
@@ -24,8 +25,7 @@ public class KMeans implements Algorithm<Table,Integer,List<Double>> {
     }
 
     //Método train. Encuentra unos centroides como representantes de cada grupo.
-    @Override
-    public void train(Table data) {
+    public void train(TableWithLabels data) {
 
         //Excepción
         if (numClusters > data.getRowCount()) {

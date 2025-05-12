@@ -2,7 +2,9 @@ package Modelo;
 
 import Modelo.algorithms.*;
 import Modelo.data.CSVLabeledFileReader;
+import Modelo.data.table.Table;
 import Modelo.data.table.TableWithLabels;
+import Modelo.recommender.RecSys;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -38,65 +40,40 @@ public class ImplementacionModelo implements InterrogaModelo {
 
     @Override
     public List<String> generarRecomendaciones(String algoritmo, String distancia, String cancionBase, int numRecs) throws Exception {
-
-        // 1) Cargo nombres
+        // 1) Cargar nombres y datos
         List<String> nombres = cargarListaCanciones();
-
-        // 2) Leo TODO el CSV (features + etiqueta) de golpe
-        CSVLabeledFileReader reader =
-                new CSVLabeledFileReader(songsFolder + separator  + "songs_train.csv");
+        CSVLabeledFileReader reader = new CSVLabeledFileReader(songsFolder + separator + "songs_train.csv");
         TableWithLabels tabla = (TableWithLabels) reader.readTableFromSource();
 
-        // 3) Índice y vector de la base
-        int idxBase = nombres.indexOf(cancionBase);
-        if (idxBase < 0) throw new IllegalArgumentException("No existe: " + cancionBase);
-        List<Double> vectorBase = tabla.getRowAt(idxBase).getData();
-
-        // 4) Instancio la métrica
+        // 2) Crear la métrica de distancia
         Distance dist = "Euclidea".equalsIgnoreCase(distancia)
                 ? new EuclideanDistance()
                 : new ManhattanDistance();
 
-        List<Map.Entry<String,Double>> lista = new ArrayList<>();
-
+        // 3) Instanciar el algoritmo adecuado según el tipo
+        Algorithm<TableWithLabels, Integer, List<Double>> algorithm;
         if ("Similitudes".equalsIgnoreCase(algoritmo)) {
-            // 5a) Calculo distancia a todas (ignoro la etiqueta)
-            for (int i = 0; i < nombres.size(); i++) {
-                if (i == idxBase) continue;
-                double d = dist.calculateDistance(
-                        vectorBase,
-                        tabla.getRowAt(i).getData()
-                );
-                lista.add(new AbstractMap.SimpleEntry<>(nombres.get(i), d));
-            }
-
+            // Usamos KNN con 1 vecino más cercano para la parte de similitudes
+            algorithm = new KNN(dist);
         } else if ("Género".equalsIgnoreCase(algoritmo)) {
-            // 5b) Sólo mismas etiquetas
-            String etiquetaBase = tabla.getRowAt(idxBase).getLabel();
-            for (int i = 0; i < nombres.size(); i++) {
-                if (i == idxBase) continue;
-                if (!etiquetaBase.equals(tabla.getRowAt(i).getLabel()))
-                    continue;
-                double d = dist.calculateDistance(
-                        vectorBase,
-                        tabla.getRowAt(i).getData()
-                );
-                lista.add(new AbstractMap.SimpleEntry<>(nombres.get(i), d));
-            }
+            // Obtener los géneros únicos a partir de las etiquetas
+            List<String> etiquetas = tabla.getHeaders();  // Suponiendo que 'getLabels' devuelve las etiquetas (géneros)
+            Set<String> generosUnicos = new HashSet<>(etiquetas);  // Usamos un Set para obtener géneros únicos
+            int numClusters = generosUnicos.size();  // Número de clusters es igual a los géneros únicos
 
+            // Usamos KMeans con el número adecuado de clusters, 100 iteraciones y una semilla aleatoria
+            long seed = System.currentTimeMillis();  // Semilla aleatoria basada en el tiempo
+            algorithm = new KMeans(numClusters, 100, seed, dist);
         } else {
             throw new IllegalArgumentException("Algoritmo desconocido: " + algoritmo);
         }
 
-        // 6) Ordenar y quedarnos con los top-k
-        return lista.stream()
-                .sorted(Comparator.comparingDouble(Map.Entry::getValue))
-                .limit(numRecs)
-                .map(Map.Entry::getKey)
-                .collect(Collectors.toList());
+        // 4) Inicializar RecSys y generar recomendaciones
+        RecSys recSys = new RecSys(algorithm);
+        recSys.train(tabla);
+        recSys.initialise(tabla, nombres);
+        return recSys.recommend(cancionBase, numRecs);
     }
-
-
 
 
 

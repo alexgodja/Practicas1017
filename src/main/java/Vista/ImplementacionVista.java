@@ -58,6 +58,8 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
 
         HBox root = new HBox(20, izquierda, centro, derecha);
         Scene scene = new Scene(root, 900, 500);
+        root.setStyle("-fx-background-color: #2b2b2b;");
+
         stage.setScene(scene);
         stage.show();
     }
@@ -78,6 +80,13 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
 
 
         izquierda = new VBox(10, l1, cbRecomendacion, l2, cbDistancia, l3, numRecs, btnRecomendar);
+        l1.setStyle("-fx-text-fill: white;");
+        l2.setStyle("-fx-text-fill: white;");
+        l3.setStyle("-fx-text-fill: white;");
+        cbRecomendacion.setStyle("-fx-background-color: #3c3f41; -fx-text-fill: white;");
+        cbDistancia.setStyle("-fx-background-color: #3c3f41; -fx-text-fill: white;");
+        numRecs.setStyle("-fx-control-inner-background: #3c3f41; -fx-text-fill: white;");
+        btnRecomendar.setStyle("-fx-background-color: #555; -fx-text-fill: white;");
 
     }
 
@@ -95,12 +104,16 @@ public class ImplementacionVista implements InterrogaVista, InformaVista {
         });
 
         centro = new VBox(10, l4, lvCanciones);
+        lvCanciones.setStyle("-fx-control-inner-background: #3c3f41; -fx-text-fill: white;");
+
     }
 
     public void creaGUIDerecha(){
         Label l5 = new Label("Recomendaciones");
         lvRecomendaciones = new ListView<>();
         derecha = new VBox(10, l5, lvRecomendaciones);
+        lvRecomendaciones.setStyle("-fx-control-inner-background: #3c3f41; -fx-text-fill: white;");
+
     }
 
     private void updateBoton() {
